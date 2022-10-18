@@ -1,0 +1,20 @@
+#中车专属破解
+#甜心直播收费房间解锁
+
+[rewrite_local]
+
+^https?://cdn.xlzhuanxian1.com:[^\s]*/live-ns/payVideo/livePayDeduct url script-response-body 
+
+[mitm]
+hostname= cdn.xlzhuanxian1.com
+
+var obj = JSON.parse($response.body);
+obj.data.code = 0;
+
+$done({body: JSON.stringify(obj)}); 
+
+
+
+
+
+
