@@ -21,10 +21,8 @@ var url = $request.url;
 var obj = JSON.parse(body);
 
 if (url.indexOf(vip) != -1){
-
-    obj.code = 0;
-
-     body = JSON.stringify(obj);
+    obj["code"] = 0;
+    body = JSON.stringify(obj);
 }
 $done({body});
 
