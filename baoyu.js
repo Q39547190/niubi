@@ -20,8 +20,7 @@ https://asdxzdf.com:9703/#/?type=1&uid=70880936
 
 
 MitM
-
-*1*
+hostname= *1*
 
 
 
