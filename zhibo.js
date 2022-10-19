@@ -9,7 +9,7 @@
 
 ^https?:\/\/cdn.xlzhuanxian1.com:[^\s]*\/live-ns\/payVideo url script-response-body
 
-https://raw.githubusercontent.com/Q39547190/niubi/main/zhibo
+https://raw.githubusercontent.com/Q39547190/niubi/main/zhibo.js
 
 [mitm]
 hostname= cdn.xlzhuanxian1.com
