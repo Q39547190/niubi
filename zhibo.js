@@ -14,6 +14,7 @@ hostname= cdn.xlzhuanxian1.com
 
 *******************************/
 
+
 var body = $response.body;
 var url = $request.url;
 var obj = JSON.parse(body);
