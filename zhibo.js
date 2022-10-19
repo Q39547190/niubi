@@ -21,7 +21,9 @@ var obj = JSON.parse(body);
 const vip = '/livePayDeduct';
 
 if (url.indexOf(vip) != -1){
-    obj["code"] = 0;
+    obj{
+   "code": 0,
+},
     body = JSON.stringify(obj);
 }
 $done({body});
