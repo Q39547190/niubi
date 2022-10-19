@@ -14,11 +14,11 @@ hostname= cdn.xlzhuanxian1.com
 
 *******************************/
 
-const vip = '/livePayDeduct';
-
 var body = $response.body;
 var url = $request.url;
 var obj = JSON.parse(body);
+
+const vip = '/livePayDeduct';
 
 if (url.indexOf(vip) != -1){
     obj["code"] = 0;
