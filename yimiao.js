@@ -16,12 +16,12 @@ hostname= et98.net
 
 var body = $response.body;
 var url = $request.url;
-var obj = JSON.parse(body);
+var obj = HTML.parse(body);
 
 const vip = '/weixin/pubinfo/getNumTable.asp';
 
 if (url.indexOf(vip) != -1){
     obj["state1"] = "0";
-    body = JSON.stringify(obj);
+    body = HTML.stringify(obj);
 }
 $done({body});
