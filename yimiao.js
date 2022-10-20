@@ -19,6 +19,6 @@ var body = $response.body;
 var url = $request.url;
 var obj = JSON.parse(body);
 
-body=body.replace(/state1":.+?,/g,'state1":"0",')
+body=body.replace(/state1":.+?,/g,'state1":"0",').replace(/takeTag":.+?,/g,'takeTag":"0",')
 
 $done({body});
