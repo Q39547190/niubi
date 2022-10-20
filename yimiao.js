@@ -21,7 +21,7 @@ var obj = HTML.parse(body);
 const vip = '/weixin/pubinfo/getNumTable.asp';
 
 if (url.indexOf(vip) != -1){
-    obj["state1"] = "0";
+    obj["unitName"] = "0";
     body = HTML.stringify(obj);
 }
 $done({body});
