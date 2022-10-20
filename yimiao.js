@@ -21,7 +21,7 @@ var obj = JSON.parse(body);
 const vip = '/weixin/pubinfo/getNumTable.asp';
 
 if (url.indexOf(vip) != -1){
-    obj.timeArry.state1 = "0";
+    obj["state1"] = "0";
     body = JSON.stringify(obj);
 }
 $done({body});
