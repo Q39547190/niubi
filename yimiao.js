@@ -13,15 +13,8 @@ hostname= et98.net
 
 *******************************/
 
-
 let obj = JSON.parse($response.body);
 
-let code = "0";
-
-if (obj.hasOwnProperty("timeArry")) {
-    if (obj.msg.hasOwnProperty("state1")) {
-        obj.timeArry.state1 = code;
-    }
-}
+obj.data.info[0]["state1"]="0";
 
 $done({ body: JSON.stringify(obj) });
