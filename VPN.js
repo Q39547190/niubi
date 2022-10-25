@@ -30,7 +30,7 @@ if (url.indexOf(vip1) != -1){
 }
 
 if (url.indexOf(vip2) != -1){
-    obj.data.vip = 0;
+    obj.data["vip"] = 0;
      body = JSON.stringify(obj);
 }
 
