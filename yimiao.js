@@ -13,8 +13,9 @@ hostname= et98.net
 
 *******************************/
 
-let obj = JSON.parse($response.body);
-
-obj.data.info[0]["state1"]="0";
-
-$done({ body: JSON.stringify(obj) });
+var body = $response.body;
+var hack = /"state1":\d+/g;
+body = body.replace(hack,'"state1":0');
+$done({
+    body
+});
