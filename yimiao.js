@@ -14,7 +14,7 @@ hostname= et98.net
 *******************************/
 
 var body = $response.body;
-var hack = /"state1":"\d+/g";
+var hack = /"state1"\s+/g:\s+/g"\d+/g";
 body = body.replace(hack,'"state1":"0"');
 $done({
     body
