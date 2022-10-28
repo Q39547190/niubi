@@ -7,16 +7,8 @@
 
 *******************************
 [rewrite_local]
-^http[s]?:\/\/www.et98.net\/weixin\/pubinfo\/takeNum.asp.+$ url script-response-body https://raw.githubusercontent.com/Q39547190/niubi/main/yimiao.js
+^http[s]?:\/\/www.et98.net(.+) url script-response-body https://raw.githubusercontent.com/Q39547190/niubi/main/yimiao.js
 [mitm] 
-hostname = *.et98.*
-*******************************
-Surge
-
-[Script]
-^http[s]?:\/\/www.et98.net\/weixin\/pubinfo\/takeNum.asp.+$ requires-body=1,max-size=0,script-path=et98.js
-
-[MITM]
 hostname = *.et98.*
 
 *******************************/
@@ -27,3 +19,5 @@ obj.linkBtnDesc= 6";
 obj.usable= "1";
 obj.statusCode= "200";
     $done({body: JSON.stringify(obj)});
+
+
