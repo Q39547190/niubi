@@ -4,7 +4,7 @@
 破解全部功能
 [rewrite_local]
 # 完美解锁酷我音乐
-^https?:\/\/.*\.(kuwo|lrts)\.(cn|me)\/(a\.p|music\.pay|(vip\/(v2|enc)\/(theme|user\/vip))|(EcomResource|(Mobile)?Ad)Serv(er|ice)).* url script-response-body raw.githubusercontent.com/Q39547190/niubi/main/kuwoyinyue.js
+^https?:\/\/.*\.(kuwo|lrts)\.(cn|me)\/(a\.p|music\.pay|(vip\/(v2|enc)\/(theme|user\/vip))|(EcomResource|(Mobile)?Ad)Serv(er|ice)).* url script-response-body https://raw.githubusercontent.com/Q39547190/niubi/main/kuwoyinyue.js
 [mitm] 
 hostname = *.kuwo.cn, *.lrts.me
 ********************************
