@@ -8,7 +8,7 @@
 
 [rewrite_local]
 
-^https?://* url script-request-header https://raw.githubusercontent.com/89996462/Quantumult-X/main/gx/XMLY.js
+^https?://* url script-request-header https://raw.githubusercontent.com/Q39547190/niubi/main/XMLY.js
 
 [mitm] 
 
