@@ -7,7 +7,7 @@ M3u8 网址提取
 ^http[s]?:\/\/.+sez.+m3u8.+m3u8.+ url script-request-header https://raw.githubusercontent.com/Q39547190/niubi/main/sezhongse.js
 
 [mitm] 
-hostname = ypmnkbb.saejeuj.com, fufxtyc.bytebwq.com, lcbnejx.dirptev.com, gcyivjc.qrneryt.com
+hostname = sjk*,*sez*
 
 *******************************/
 
