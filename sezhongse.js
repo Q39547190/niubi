@@ -3,7 +3,7 @@
 M3u8 网址提取
 *******************************
 [rewrite_local]
-# > 麻豆社区解锁全部视频
+# > 色中色破解全部视频
 ^http[s]?:\/\/.+sez.+m3u8.+m3u8.+ url script-request-header https://raw.githubusercontent.com/Q39547190/niubi/main/sezhongse.js
 
 [mitm] 
