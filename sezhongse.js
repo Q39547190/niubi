@@ -11,15 +11,14 @@ hostname = sjk*,*sez*
 
 *******************************/
 
-
-var __Oxed7e9 = ["mdsq crack", "url", "headers", "X-Playback-Session-Id", "hasOwnProperty", ">_  一一一一中车专属破解一一一一 🛠", ">_ 点击一下此通知即可在线观看 🔞", "", "msg", "done"];
-const $ = new Env(__Oxed7e9[0x0]);
-let __0xed7e9 = $request[__Oxed7e9[0x1]];
-let __0xed7e6 = $request[__Oxed7e9[0x2]];
-if (__0xed7e6[__Oxed7e9[0x4]](__Oxed7e9[0x3])) {
-    $[__Oxed7e9[0x8]](__Oxed7e9[0x5], __Oxed7e9[0x6], __Oxed7e9[0x7], __0xed7e9)
+var __Tis = ["mdsq crack", "url", "headers", "X-Playback-Session-Id", "hasOwnProperty", ">_  一一一一中车专属破解色中色一一一一 🛠", ">_ 点击一下此通知即可在线观看 🔞", "", "msg", "done"];
+const $ = new Env(__Tis[0x0]);
+let __0xed7e9 = $request[__Tis[0x1]];
+let __qingqiu = $request[__Tis[0x2]];
+if (__qingqiu[__Tis[0x4]](__Tis[0x3])) {
+    $[__Tis[0x8]](__Tis[0x5], __Tis[0x6], __Tis[0x7], __0xed7e9)
 };
-$[__Oxed7e9[0x9]]({});
+$[__Tis[0x9]]({});
 
 function Env(t, e) {
     class s {
