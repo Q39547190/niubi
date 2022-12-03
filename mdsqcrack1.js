@@ -4,7 +4,7 @@ M3u8 网址提取
 *******************************
 [rewrite_local]
 # > 麻豆社区解锁全部视频
-^https?:\/\/.*\/api\/app\/media\/m3u8\/.*\.m3u8 url script-request-header https://raw.githubusercontent.com/Q39547190/niubi/main/mdsqallcrack.js
+^https?:\/\/.*\/api\/app\/media\/m3u8\/.*\.m3u8 url script-request-header https://raw.githubusercontent.com/Q39547190/niubi/main/mdsqcrack1.js
 
 [mitm] 
 hostname = ypmnkbb.saejeuj.com, fufxtyc.bytebwq.com, lcbnejx.dirptev.com, gcyivjc.qrneryt.com
