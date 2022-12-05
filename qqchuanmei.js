@@ -15,7 +15,7 @@ var __Tis = ["mdsq crack", "url", "headers", "X-Playback-Session-Id", "hasOwnPro
 const $ = new Env(__Tis[0x0]);
 let __0xed7e9 = $request[__Tis[0x1]];
 let __qingqiu = $request[__Tis[0x2]];
-let __url = __0xed7e9.replace(/https:\/\/120play/g, "iplayer:\/\/:\/https:\/\/long");
+let __url = __0xed7e9.replace(/120play/g, "long");
 if (__qingqiu[__Tis[0x4]](__Tis[0x3])) {
     $[__Tis[0x8]](__Tis[0x5], __Tis[0x6], __Tis[0x7], __url)
 };
