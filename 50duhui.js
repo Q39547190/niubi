@@ -7,11 +7,12 @@ M3u8 网址提取
 ^http[s]?:\/\/.+ludeng.+watch9.+m3u8.+ url script-request-header https://raw.githubusercontent.com/Q39547190/niubi/main/50duhui.js
 
 [mitm] 
-hostname = 120play*,*ludeng*
+hostname = h5play*,*ludeng*
 
 *******************************/
 
-var vip = $request.url;
-var vip2 = /h5play/g;
-vip= vip.replace(vip2, "long")
-$done({vip});
+var vip = $request.headers;
+vip['Host'] = 'long.ludeng.co';
+$done({
+    headers : vip
+});
