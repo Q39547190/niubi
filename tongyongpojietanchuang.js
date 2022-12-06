@@ -15,8 +15,14 @@ QQ传媒 2022.12.6
 下载地址：https://sn.app002.life/af/ZGD
 
 -------分割线------
+
 91AV 2022.12.6
 下载地址: https://mv.aff007.cool/aff-cuEur
+
+-------分割线------
+
+PiliPili (动漫类)2022.12.7
+下载地址 ：https://pili.app002.life/
 
 -------分割线------
 
