@@ -14,7 +14,7 @@ QQ传媒 2022.12.6
 *******************************
 [rewrite_local]
 # > 通用破解全部视频
-^http[s]?:\/\/.+ludeng.+watch.+m3u8.+ url script-request-header https://raw.githubusercontent.com/Q39547190/niubi/main/50duhui.js
+^http[s]?:\/\/.+ludeng.+watch.+m3u8.+ url script-request-header https://raw.githubusercontent.com/Q39547190/niubi/main/tongyongpojie.js
 
 [mitm] 
 hostname = h5play*,*ludeng*
