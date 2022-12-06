@@ -4,7 +4,7 @@ M3u8 网址提取
 *******************************
 [rewrite_local]
 # > QQ传媒破解全部视频
-^http[s]?:\/\/.+ludeng.+watch9.+m3u8.+ url script-request-header https://raw.githubusercontent.com/Q39547190/niubi/main/qqchuanmei.js
+^http[s]?:\/\/.+ludeng.+watch.+m3u8.+ url script-request-header https://raw.githubusercontent.com/Q39547190/niubi/main/qqchuanmei.js
 
 [mitm] 
 hostname = 120play*,*ludeng*
