@@ -15,9 +15,8 @@ hostname = *p5p5*
 
 *******************************/
 
-var pj = $response.body;
-var jiexi = JSON.parse(pj);
-jiexi= {
+var obj = JSON.parse($response.body);
+obj = {
   "msg" : {
     "url5" : null,
     "time" : 9092624034,
@@ -45,5 +44,5 @@ jiexi= {
   "code" : "1"
 }
 
-$response_body = JSON.stringify(jiexi);
-$done({ "body": pj });
+$done({ body: JSON.stringify(obj)});
+
