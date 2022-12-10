@@ -5,7 +5,7 @@
 [rewrite_local]
 # > 暗Tv全部视频
 
-^http[s]?:\/\/.+cloudfront.+index.+ url script-request-header https://raw.githubusercontent.com/Q39547190/niubi/main/antv.js
+^http[s]?:\/\/.+cloudfront.+index.+ url script-request-header https://raw.githubusercontent.com/Q39547190/niubi/main/antvdingzhi.js
 
 [mitm] 
 hostname = *antvapp*,*cloudfront*
