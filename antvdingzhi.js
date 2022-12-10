@@ -14,7 +14,7 @@ hostname = *antvapp*,*cloudfront*
 
 *******************************/
 
-var __Tis = ["mdsq crack", "url", "headers", "X-Playback-Session-Id", "hasOwnProperty", ">_  一一中车大神提示一一 🚦", ">_ 破解代码 已注入❕购买成功🔞", "", "msg", "done"];
+var __Tis = ["mdsq crack", "url", "headers", "Authorization", "hasOwnProperty", ">_  一一中车大神提示一一 🚦", ">_ 破解代码 已注入❕购买成功🔞", "", "msg", "done"];
 const $ = new Env(__Tis[0x0]);
 let __url = $request[__Tis[0x1]];
 let __qingqiu = $request[__Tis[0x2]];
