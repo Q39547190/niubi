@@ -7,19 +7,19 @@
 
 ^http[s]?:\/\/.+antvapp.+\/api\/videos\/.*$ url request-header (/r/n)Authorization:.+(/r/n) request-header $1Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL2FwaTIuYW50dmFwcC5jb206ODA4MC9hcGkvYXV0aC9yZXN0b3JlIiwiaWF0IjoxNjcwMjk0MzIzLCJleHAiOjE3MDEzOTgzMjMsIm5iZiI6MTY3MDI5NDMyMywianRpIjoiMTdmdXVkN0dLeUxCRHRGbyIsInN1YiI6IjEwMjUxMDQ1IiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.-CJfM7Zg-Wpl-t4LDUk8qi2YlauhZe8chB6yc6kGFw8$2
 
-^http[s]?:\/\/.+cloudfront.+index.+ url script-request-header https://raw.githubusercontent.com/Q39547190/niubi/main/antvdingzhi.js
+^http[s]?:\/\/.+antvapp.+get_profile url script-request-header https://raw.githubusercontent.com/Q39547190/niubi/main/antvdingzhi.js
 
 [mitm] 
 hostname = *antvapp*,*cloudfront*
 
 *******************************/
 
-var __Tis = ["mdsq crack", "url", "headers", "X-Playback-Session-Id", "hasOwnProperty", ">_  一一中车专属破解(暗TV)一一 🛠", ">_ 点击一下此通知即可在线观看 🔞", "", "msg", "done"];
+var __Tis = ["mdsq crack", "url", "headers", "X-Playback-Session-Id", "hasOwnProperty", ">_  一一中车大神提示一一 🚦", ">_ 破解代码 已注入❕购买成功🔞", "", "msg", "done"];
 const $ = new Env(__Tis[0x0]);
 let __url = $request[__Tis[0x1]];
 let __qingqiu = $request[__Tis[0x2]];
 if (__qingqiu[__Tis[0x4]](__Tis[0x3])) {
-    $[__Tis[0x8]](__Tis[0x5], __Tis[0x6], __Tis[0x7], __url)
+    $[__Tis[0x8]](__Tis[0x5], __Tis[0x6], __Tis[0x7])
 };
 $[__Tis[0x9]]({});
 
