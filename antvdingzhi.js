@@ -7,10 +7,10 @@
 
 ^http[s]?:\/\/.+antvapp.+\/api\/videos\/.*$ url request-header (/r/n)Authorization:.+(/r/n) request-header $1Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL2FwaTIuYW50dmFwcC5jb206ODA4MC9hcGkvYXV0aC9yZXN0b3JlIiwiaWF0IjoxNjcwMjk0MzIzLCJleHAiOjE3MDEzOTgzMjMsIm5iZiI6MTY3MDI5NDMyMywianRpIjoiMTdmdXVkN0dLeUxCRHRGbyIsInN1YiI6IjEwMjUxMDQ1IiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.-CJfM7Zg-Wpl-t4LDUk8qi2YlauhZe8chB6yc6kGFw8$2
 
-^http[s]?:\/\/.+d3gwiy3e52viwp.+index.+ url script-request-header https://raw.githubusercontent.com/Q39547190/niubi/main/antvdingzhi.js
+^http[s]?:\/\/.+cloudfront.+\/net\/api\/index.+ url script-request-header https://raw.githubusercontent.com/Q39547190/niubi/main/antv.js
 
 [mitm] 
-hostname = *antvapp*,*d3gwiy3e52viwp*
+hostname = *antvapp*,*cloudfront*
 
 *******************************/
 
