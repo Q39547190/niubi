@@ -25,7 +25,7 @@ hostname= 42.157.*.*
 
 var hausd0rff = $request.headers;
 hausd0rff['user-agent'] = 'Dart/2.12 (dart:io)';
-hausd0rff['authorization'] = 'bearer aeb10fa3e1253436e1b952f9ea2b437e';
+hausd0rff['authorization'] = 'bearer 3897b719461e549a4cfd0b32ab25eaf4';
 $done({
     headers : hausd0rff
 });
