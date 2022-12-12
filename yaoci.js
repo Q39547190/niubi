@@ -15,7 +15,7 @@ hostname =*qazwha5*
 var $request_url = $request.url;
 var vip = $request.headers;
 vip['X-Api-UserAgent'] = 'DevId=H-4V6GXHT9-D66D-7BF8-BEA291C96E11;DevType=iphone;Platform=h5;Version=1.0';
-vip['X-Api-Key'] = 'ts=1670840272.57;ac=09e4ce93dfcc7bf0517ff2fdd002072c22691a39';
+vip['X-Api-Key'] = 'ts=1670845149.538;ac=46311eb275002d4919f1c8755a12c6a1f603d224';
 $done({
     headers : vip
 });
