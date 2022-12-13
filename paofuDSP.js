@@ -5,10 +5,13 @@
 *******************************
 [rewrite_local]
 # > 泡芙短视频解解全部视频
+
+^https:\/\/ajk.pfdspmdyr.com.+vid.+count.+ url request-header (\r\n)Authorization:.+(\r\n) request-header $1Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aW1lc3RhbXAiOjE2NzA4NTA3MTQxMDM1NjMzMDAsInVpZCI6MzI3Nzk4ODF9.5KOoKamwJCbnhu8o5txjHL5MyKAaCrNjlCxgwEAHF6o$2
+
 ^http[s]?:\/\/.+pfdspdrzt.+m3u8.+m3u8.+ url script-request-header https://raw.githubusercontent.com/Q39547190/niubi/main/paofuDSP.js
 
 [mitm] 
-hostname =*pfdspdrzt*
+hostname =*pfdspdrzt*,*pfdspmdyr*
 
 *******************************/
 
