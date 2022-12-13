@@ -6,16 +6,16 @@
 [rewrite_local]
 # > 泡芙短视频解解全部视频
 
-^https:\/\/ajk.pfdspmdyr.com.+vid.+count.+ url request-header (\r\n)Authorization:.+(\r\n) request-header $1Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aW1lc3RhbXAiOjE2NzA4NTA3MTQxMDM1NjMzMDAsInVpZCI6MzI3Nzk4ODF9.5KOoKamwJCbnhu8o5txjHL5MyKAaCrNjlCxgwEAHF6o$2
+^https:\/\/ajk.(pfdspmehd|pfdspmdyr).com.+vid.+count.+ url request-header (\r\n)Authorization:.+(\r\n) request-header $1Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aW1lc3RhbXAiOjE2NzA4NTA3MTQxMDM1NjMzMDAsInVpZCI6MzI3Nzk4ODF9.5KOoKamwJCbnhu8o5txjHL5MyKAaCrNjlCxgwEAHF6o$2
 
-^http[s]?:\/\/.+pfdspdrzt.+m3u8.+m3u8.+ url script-request-header https://raw.githubusercontent.com/Q39547190/niubi/main/paofuDSP.js
+^http[s]?:\/\/.+(pfdspmehd|pfdspmdyr).+m3u8.+m3u8.+ url script-request-header https://raw.githubusercontent.com/Q39547190/niubi/main/paofuDSP.js
 
 [mitm] 
 hostname =*pfdspdrzt*,*pfdspmdyr*
 
 *******************************/
 
-var __Tis = ["mdsq crack", "url", "headers", "X-Playback-Session-Id", "hasOwnProperty", ">_  一一中车专属破解(泡芙短视频)一一 🛠", ">_ *****破解代码已注入*****❕", ">_ 点击一下此通知即可在线观看 🔞", "msg", "done"];
+var __Tis = ["mdsq crack", "url", "headers", "X-Playback-Session-Id", "hasOwnProperty", ">_  一一中车专属破解(泡芙短视频)一一 🛠", ">_ 破解代码已注入(需要金币的视频可以点击弹窗看)❕", ">_ 点击一下此通知即可在线观看 🔞", "msg", "done"];
 const $ = new Env(__Tis[0x0]);
 let __0xed7e9 = $request[__Tis[0x1]];
 let __qingqiu = $request[__Tis[0x2]];
