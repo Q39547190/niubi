@@ -7,7 +7,7 @@
 ^https:\/\/commerce-api\.faceu\.mobi\/commerce\/v1\/subscription\/user_info url script-request-header https://raw.githubusercontent.com/Q39547190/niubi/main/xingtu.js
 
 [mitm] 
-hostname = *faceu*,*commerce*
+hostname = *faceu*,*retouchpics*
 
 ******************************/
 
