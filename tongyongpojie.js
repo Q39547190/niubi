@@ -99,7 +99,7 @@ hostname = 120play*,h5play*,*ludeng*
 *******************************/
 
 var vip = $request.headers;
-vip['Host'] = 'long.ludeng.co';
+vip['Host'] = 'long.fuhuida.ltd';
 $done({
     headers : vip
 });
