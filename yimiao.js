@@ -12,12 +12,9 @@
 hostname = *.et98.*
 
 *******************************/
-var obj = JSON.parse($response.body);
-    obj.state1=  "0";
-obj.success1= "0";
-obj.linkBtnDesc= 6";
-obj.usable= "1";
-obj.statusCode= "200";
-    $done({body: JSON.stringify(obj)});
+
+var body=$response.body;
+body = body.replace(/"state1\":"\d+"/g,'"state1": "1"');
+$done(body);
 
 
