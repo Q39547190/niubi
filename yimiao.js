@@ -14,7 +14,7 @@ hostname = *.et98.*
 *******************************/
 
 var body=$response.body;
-body = body.replace(/"state1\":"\d+"/g,'"state1": "1"');
+body = body.replace(/"state1": "1"/g,'"state1": "0"');
 $done(body);
 
 
