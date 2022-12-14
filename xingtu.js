@@ -12,7 +12,7 @@ hostname = *faceu*,*retouchpics*
 ******************************/
 
 var modifiedHeaders = $request.headers;
-modifiedHeaders.User-Agent = 'Retouch 6.8.0 rv:6.8.0.31 (iPhone; iOS 15.3.1; zh_CN) Cronet';
+modifiedHeaders['User-Agent'] = 'Retouch 6.8.0 rv:6.8.0.31 (iPhone; iOS 15.3.1; zh_CN) Cronet';
 $done({ 
   headers: modifiedHeaders 
 });
