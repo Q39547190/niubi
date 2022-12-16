@@ -6,7 +6,7 @@
 [rewrite_local]
 # > 成人快手解全部视频
 
-^https:\/\/h5.zhihuav.com.+(media|bulletscreen)\/(like|play|list) url request-header (\r\n)Cookie:.+(\r\n) request-header $1Cookie: zh_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJwdWJsaWMiLCJleHAiOjE2NzM3Njg4NTAsImlzc3VlciI6ImNvbS5idXR0ZXJmbHkiLCJzdWIiOiJhc2lnbiIsInVzZXJJZCI6MTUwOTUyMzB9.8cUd3IbFX5qx2jIEm0In5nybvsQXQEWEQnhwkkz3XPw$2
+^https:\/\/h5.zhihuav.com.+(media|bulletscreen)\/(like|play|list) url request-header (\r\n)Cookie:.+(\r\n) request-header $1Cookie: zh_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJwdWJsaWMiLCJleHAiOjE2NzM3Njg4NTAsImlzc3VlciI6ImNvbS5idXR0ZXJmbHkiLCJzdWIiOiJhc2lnbiIsInVzZXJJZCI6MTUwOTUyMzB9.8cUd3IbFX5qx2jIEm0In5nybvsQXQEWEQnhwkkz3XPw$2 url request-header (\r\n)Authorization:.+(\r\n) request-header $1Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aW1lc3RhbXAiOjE2NzA4NTA3MTQxMDM1NjMzMDAsInVpZCI6MzI3Nzk4ODF9.5KOoKamwJCbnhu8o5txjHL5MyKAaCrNjlCxgwEAHF6o$2
 
 ^http[s]?:\/\/.+zhihuav.+m3u8.+m3u8.+ url script-request-header https://raw.githubusercontent.com/Q39547190/niubi/main/CRkuaishou.js
 
