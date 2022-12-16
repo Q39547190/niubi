@@ -11,7 +11,7 @@
 ^http[s]?:\/\/.+hxapit.+m3u8.+m3u8.+ url script-request-header https://raw.githubusercontent.com/Q39547190/niubi/main/hongxingDSP.js
 
 [mitm] 
-hostname =*hxapitw*
+hostname =*hxapit*
 
 *******************************/
 
