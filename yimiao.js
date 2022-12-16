@@ -15,6 +15,9 @@ hostname = *.et98.*
 
 var body=$response.body;
 body = body.replace(/"state1": "1"/g,'"state1": "0"');
+body = body.replace(/"success1": "1"/g,'"success1": "0"');
+body = body.replace(/"usable": "0"/g,'"usable": "1"');
+body = body.replace(/"statusCode": "\d+"/g,'"statusCode": "200"');
 $done(body);
 
 
