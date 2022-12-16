@@ -6,7 +6,7 @@
 [rewrite_local]
 # > 成人快手解全部视频
 
-^https:\/\/h5.zhihuav.com.+\/media\/m3u8.+ url script-request-header https://raw.githubusercontent.com/Q39547190/niubi/main/CRkuaishou.js
+^https:\/\/h5.zhihuav.com.+\/media\/enkey url script-request-header https://raw.githubusercontent.com/Q39547190/niubi/main/CRkuaishou.js
 
 [mitm] 
 hostname =*zhihuav*
