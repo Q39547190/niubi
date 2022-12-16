@@ -6,14 +6,24 @@
 [rewrite_local]
 # > 成人快手解全部视频
 
-^https:\/\/h5.zhihuav.com.+(media|bulletscreen)\/(like|play|list) url request-header (\r\n)Cookie:.+(\r\n) request-header $1Cookie: zh_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJwdWJsaWMiLCJleHAiOjE2NzM3Njg4NTAsImlzc3VlciI6ImNvbS5idXR0ZXJmbHkiLCJzdWIiOiJhc2lnbiIsInVzZXJJZCI6MTUwOTUyMzB9.8cUd3IbFX5qx2jIEm0In5nybvsQXQEWEQnhwkkz3XPw$2 url request-header (\r\n)Authorization:.+(\r\n) request-header $1Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aW1lc3RhbXAiOjE2NzA4NTA3MTQxMDM1NjMzMDAsInVpZCI6MzI3Nzk4ODF9.5KOoKamwJCbnhu8o5txjHL5MyKAaCrNjlCxgwEAHF6o$2
-
-^http[s]?:\/\/.+zhihuav.+m3u8.+m3u8.+ url script-request-header https://raw.githubusercontent.com/Q39547190/niubi/main/CRkuaishou.js
+^http[s]?:\/\/.+zhihuav.+(media|bulletscreen)\/(like|play|list|m3u8).+ url script-request-header https://raw.githubusercontent.com/Q39547190/niubi/main/CRkuaishou.js
 
 [mitm] 
 hostname =*zhihuav*
 
 *******************************/
+
+var vip = $request.headers;
+var $request_url = $request.$request_url;
+if ($request_url.indexOf("/h5app/media/like", "/h5app/media/play","/h5app/bulletscreen/list") != -1) {
+vip['Authorization'] = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJwdWJsaWMiLCJleHAiOjE2NzM3Njg4NTAsImlzc3VlciI6ImNvbS5idXR0ZXJmbHkiLCJzdWIiOiJhc2lnbiIsInVzZXJJZCI6MTUwOTUyMzB9.8cUd3IbFX5qx2jIEm0In5nybvsQXQEWEQnhwkkz3XPw';
+vip['Cookie'] = 'zh_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJwdWJsaWMiLCJleHAiOjE2NzM3Njg4NTAsImlzc3VlciI6ImNvbS5idXR0ZXJmbHkiLCJzdWIiOiJhc2lnbiIsInVzZXJJZCI6MTUwOTUyMzB9.8cUd3IbFX5qx2jIEm0In5nybvsQXQEWEQnhwkkz3XPw';
+$done({
+    headers : vip
+});
+}
+
+if ($request_url.indexOf("/h5app/media/m3u8") ! = -1){
 
 var __Tis = ["mdsq crack", "url", "headers", "X-Playback-Session-Id", "hasOwnProperty", ">_  一一中车专属破解(成人快手)一一 🛠", ">_ 破解代码已注入(💰金币的视频请点击弹窗看)❕", ">_ 点击一下此通知即可在线观看 🔞", "msg", "done"];
 const $ = new Env(__Tis[0x0]);
@@ -388,4 +398,5 @@ function Env(t, e) {
             this.log("", `🔔${this.name}, 结束! 🕛 ${s} 秒`), this.log(), this.isSurge() || this.isQuanX() || this.isLoon() ? $done(t) : this.isNode() && process.exit(1)
         }
     }(t, e)
+ }
 }
