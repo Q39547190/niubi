@@ -6,9 +6,9 @@
 [rewrite_local]
 # > 红杏短视频解解全部视频
 
-^https:\/\/api.hxapitw.com.+vid.+vid.+ url request-header (\r\n)Authorization:.+(\r\n) request-header $1Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aW1lc3RhbXAiOjE2NzA5MTQ0MjAyNTg4NDI2MDAsInVpZCI6MTY3NjAyNn0.JpasuGnmevyzqvo_KYctj-WjR35Njfs1Oa6zjw0QQ_g$2
+^https:\/\/api.hxapit.com.+vid.+vid.+ url request-header (\r\n)Authorization:.+(\r\n) request-header $1Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aW1lc3RhbXAiOjE2NzA5MTQ0MjAyNTg4NDI2MDAsInVpZCI6MTY3NjAyNn0.JpasuGnmevyzqvo_KYctj-WjR35Njfs1Oa6zjw0QQ_g$2
 
-^http[s]?:\/\/.+hxapitw.+m3u8.+m3u8.+ url script-request-header https://raw.githubusercontent.com/Q39547190/niubi/main/hongxingDSP.js
+^http[s]?:\/\/.+hxapit.+m3u8.+m3u8.+ url script-request-header https://raw.githubusercontent.com/Q39547190/niubi/main/hongxingDSP.js
 
 [mitm] 
 hostname =*hxapitw*
