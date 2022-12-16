@@ -15,13 +15,11 @@ hostname =*zhihuav*
 
 var vip = $request.headers;
 var $request_url = $request.$request_url;
-if ($request_url.indexOf("/h5app/media/like", "/h5app/media/play","/h5app/bulletscreen/list") != -1) {
 vip['Authorization'] = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJwdWJsaWMiLCJleHAiOjE2NzM3Njg4NTAsImlzc3VlciI6ImNvbS5idXR0ZXJmbHkiLCJzdWIiOiJhc2lnbiIsInVzZXJJZCI6MTUwOTUyMzB9.8cUd3IbFX5qx2jIEm0In5nybvsQXQEWEQnhwkkz3XPw';
 vip['Cookie'] = 'zh_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJwdWJsaWMiLCJleHAiOjE2NzM3Njg4NTAsImlzc3VlciI6ImNvbS5idXR0ZXJmbHkiLCJzdWIiOiJhc2lnbiIsInVzZXJJZCI6MTUwOTUyMzB9.8cUd3IbFX5qx2jIEm0In5nybvsQXQEWEQnhwkkz3XPw';
 $done({
     headers : vip
 });
-}
 
 if ($request_url.indexOf("/h5app/media/m3u8") ! = -1){
 
