@@ -16,8 +16,7 @@ hostname =*ppapi*,*17gwl*,*sgyrc*,*mnghx*,*czbt*,*jtshuzhiwa*
 *******************************/
 
 var vip = $request.headers;
-vip['X-AUTH-TOKEN'] = '1511aa9decd50335781baf35983bcdd79eeacff2';
-vip['X-CODESIGN'] = 'eyJhbGciOiJIUzUxMiIsImlhdCI6MTY3MDE2ODE2NCwiZXhwIjoxNjg1NzIwMTY0fQ.eyJpZCI6MTA2MDI5NDExfQ.2Zen35BbPAFjghN45rsy-eB9VNFeV816E__2BS3rLmniEyQ2DUhI2EL_LWzu5ZTLSZeUMiUAr3TOBkMU9gxXyA';
+vip['X-AUTH-TOKEN'] = 'eyJhbGciOiJIUzUxMiIsImlhdCI6MTY3MDE2ODE2NCwiZXhwIjoxNjg1NzIwMTY0fQ.eyJpZCI6MTA2MDI5NDExfQ.2Zen35BbPAFjghN45rsy-eB9VNFeV816E__2BS3rLmniEyQ2DUhI2EL_LWzu5ZTLSZeUMiUAr3TOBkMU9gxXyA';
 $done({
     headers : vip
 });
