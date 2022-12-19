@@ -17,6 +17,7 @@ hostname =*ppapi*,*17gwl*,*sgyrc*,*mnghx*,*czbt*,*jtshuzhiwa*
 
 var vip = $request.headers;
 vip['X-AUTH-TOKEN'] = 'eyJhbGciOiJIUzUxMiIsImlhdCI6MTY3MDE2ODE2NCwiZXhwIjoxNjg1NzIwMTY0fQ.eyJpZCI6MTA2MDI5NDExfQ.2Zen35BbPAFjghN45rsy-eB9VNFeV816E__2BS3rLmniEyQ2DUhI2EL_LWzu5ZTLSZeUMiUAr3TOBkMU9gxXyA';
+$notify("中车专属破解-注入破解代码成功");
 $done({
     headers : vip
 });
