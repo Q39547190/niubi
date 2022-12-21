@@ -20,13 +20,3 @@ if (_url.indexOf("/m_user/info") != -1) {
 $notify("中车专属破解-注入破解代码成功‼️","⚠️⚠️⚠️⚠️⚠️⚠️⚠️","破解永久会员😏");
     $done({ "vip": body });
 }
-
-var qingqiuti = $request.headers;
-if (_url.indexOf("/video/apply_play_permission") != -1) {
-
-qingqiuti['X-AUTH-TOKEN'] = '1511aa9decd50335781baf35983bcdd79eeacff2';
-qingqiuti['X-CODESIGN'] = 'eyJhbGciOiJIUzUxMiIsImlhdCI6MTY3MDE2ODE2NCwiZXhwIjoxNjg1NzIwMTY0fQ.eyJpZCI6MTA2MDI5NDExfQ.2Zen35BbPAFjghN45rsy-eB9VNFeV816E__2BS3rLmniEyQ2DUhI2EL_LWzu5ZTLSZeUMiUAr3TOBkMU9gxXyA';
-$done({
-    headers : qingqiuti
-});
-}
