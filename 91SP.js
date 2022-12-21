@@ -16,9 +16,8 @@ hostname =*ppapi*,*17gwl*,*sgyrc*,*mnghx*,*czbt*,*jtshuzhiwa*
 var _url = $request._url;
 var vip = $request.headers;
 const play = '/m_sns/video/apply_play_permission';
-if (_url.indexOf(play) != -1) {
 vip['X-CODESIGN'] = 'eyJhbGciOiJIUzUxMiIsImlhdCI6MTY3MDE2ODE2NCwiZXhwIjoxNjg1NzIwMTY0fQ.eyJpZCI6MTA2MDI5NDExfQ.2Zen35BbPAFjghN45rsy-eB9VNFeV816E__2BS3rLmniEyQ2DUhI2EL_LWzu5ZTLSZeUMiUAr3TOBkMU9gxXyA';
 $done({
     headers : vip
 });
-}
+
