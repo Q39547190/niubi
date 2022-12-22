@@ -6,7 +6,7 @@
 [rewrite_local]
 # > 91视频全部视频
 
-^http[s]?:\/\/.+((ppapi)|(17gwl)|(sgyrc)|(mnghx)|(czbt)|(jtshuzhiwa)).(info|cc|com)\/(m_sns|m_user)\/(video\/apply_play_permission|film|info).*$ url script-request-header https://raw.githubusercontent.com/Q39547190/niubi/main/91SP.js
+^http[s]?:\/\/.+((ppapi)|(17gwl)|(sgyrc)|(mnghx)|(czbt)|(jtshuzhiwa)).(info|cc|com)\/(m_sns|m_user)\/(video\/apply_play_permission|film|info).*$ url script-response-body https://raw.githubusercontent.com/Q39547190/niubi/main/91SP.js
 
 [mitm] 
 hostname =*ppapi*,*17gwl*,*sgyrc*,*mnghx*,*czbt*,*jtshuzhiwa*
