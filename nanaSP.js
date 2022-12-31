@@ -8,6 +8,9 @@
 
 ^http[s]?:\/\/.+pwa.+/video/info/.+ url script-request-query https://raw.githubusercontent.com/Q39547190/niubi/main/nanaSP.js
 
+[mitm] 
+hostname =*pwa*
+
 ******************************/
 
 var vip = $request.query;
