@@ -13,9 +13,9 @@ hostname =*pwa*
 
 ******************************/
 
-var vip = $request.query;
-vip['token'] = 'eyJ1c2VyX2lkIjo1Mjc3Mjg3MSwibGFzdGxvZ2luIjoxNjcyNDgzODYxfQ.540da036e734961b48a2fbc60ba31a9d.62a6205ce69d4b09d026da90ed92bf54522b37515ec5bcbcf307b292';
+var vip = $request.url;
+vip.replace(/token=/.*?/g 'token=eyJ1c2VyX2lkIjo1Mjc3Mjg3MSwibGFzdGxvZ2luIjoxNjcyNDgzODYxfQ.540da036e734961b48a2fbc60ba31a9d.62a6205ce69d4b09d026da90ed92bf54522b37515ec5bcbcf307b292';
 
 $done({
-    query: vip
+    url: vip
 });
