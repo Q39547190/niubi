@@ -6,7 +6,7 @@
 [rewrite_local]
 # > 娜娜视频全部视频
 
-^http[s]?:\/\/pwa.+video.+info.+ url script-request-header https://raw.githubusercontent.com/Q39547190/niubi/main/nanaSP.js
+^http[s]?:\/\/pwa.+video.+info.+ url script-response-body https://raw.githubusercontent.com/Q39547190/niubi/main/nanaSP.js
 
 [mitm] 
 hostname =*pwa*
