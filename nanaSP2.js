@@ -15,7 +15,11 @@ hostname =*pwa*
 
 var body = $response.body;
 var url = $request.url;
+var parse = JSON.parse(body);
 if (url.indexOf("/user/info") != -1) {
-    body = body.replace(/vip":\w+/g, "vip"\:true").replace(/phone":\w+/g, "phone"\:18888888888").replace(/expiry":\w+/g, "expiry"\:9999999999");
+    parse = {"status":{"code":200,"message":"success"},"response":{"user_id":52806408,"email":null,"phone":null,"vip":false,"expiry":null,"invite_code":"us52806408","invite_count":null,"promoter":null,"points":null,"no_purchase":true,"shop_icon":"first","shop_link":"\/v1\/shop\/2","video_views":[10,10]}};
+    body = JSON.stringify(parse);
+
+
 $done({ "body": body });
 }
