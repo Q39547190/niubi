@@ -13,7 +13,7 @@ hostname =*pwa*
 
 ******************************/
 
-var url = $request.url; // 获取当前url
+var url = $request.url;
 var token = "eyJ1c2VyX2lkIjo1Mjc3Mjg3MSwibGFzdGxvZ2luIjoxNjcyNDgzODYxfQ.540da036e734961b48a2fbc60ba31a9d.62a6205ce69d4b09d026da90ed92bf54522b37515ec5bcbcf307b292"; // 设置token的值
-var newUrl = url.replace(/token=(\S+)/, "token=" + token); // 使用正则替换url中的token
-$done({url: newUrl}); // 输出新的url
+var newUrl = url.replace(/token=(\S+)/, "token=" + token);
+$done({url: newUrl});
