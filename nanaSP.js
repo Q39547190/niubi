@@ -13,10 +13,6 @@ hostname =*pwa*
 
 ******************************/
 
-var url = $request.url;
-let queryString = new URLSearchParams(url.split('?')[1]);
-queryString.set('token', 'eyJ1c2VyX2lkIjo1Mjc3Mjg3MSwibGFzdGxvZ2luIjoxNjcyNDgzODYxfQ.540da036e734961b48a2fbc60ba31a9d.62a6205ce69d4b09d026da90ed92bf54522b37515ec5bcbcf307b292');
-
-// 打印修改后的url
-var newUrl = url.split('?')[0] + '?' + params.toString();
+var url = $request.query;
+var newUrl = url.replace(/token=(\.+)/, 'token= eyJ1c2VyX2lkIjo1Mjc3Mjg3MSwibGFzdGxvZ2luIjoxNjcyNDgzODYxfQ.540da036e734961b48a2fbc60ba31a9d.62a6205ce69d4b09d026da90ed92bf54522b37515ec5bcbcf307b292');
 $done(newUrl);
