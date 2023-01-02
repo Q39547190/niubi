@@ -16,6 +16,6 @@ hostname =*pwa*
 var body = $response.body;
 var url = $request.url;
 if (url.indexOf("/user/info") != -1) {
-    body = body.replace(/vip":\w+/g, "vip":true").replace(/phone":\w+/g, "phone":18888888888").replace(/expiry":\w+/g, "expiry":9999999999");
+    body = body.replace(/vip":\w+/g, "vip"\:true").replace(/phone":\w+/g, "phone"\:18888888888").replace(/expiry":\w+/g, "expiry"\:9999999999");
 $done({ "body": body });
 }
