@@ -20,7 +20,7 @@ if (url.indexOf("/user/info") != -1) {
     parse = {"status":{"code":200,"message":"success"},"response":{"user_id":99999999,"email":null,"phone":18888888888,"vip":true,"expiry":9999999999,"invite_code":"us52806408","invite_count":null,"promoter":null,"points":null,"no_purchase":true,"shop_icon":"first","shop_link":"\/v1\/shop\/2","video_views":[10,10]}};
     body = JSON.stringify(parse);
 
-
+$notify("中车专属破解-娜娜视频🚗","****破解代码注入成功****","永久vip破解成功‼️");
 $done({ "body": body });
 }
 
