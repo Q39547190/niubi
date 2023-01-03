@@ -6,7 +6,7 @@
 [rewrite_local]
 # > 娜娜视频全部视频
 
-^http[s]?:\/\/pwa.+(user|ad|shorts).+(info\?|poster\?|videos\/1\?)token=.+ url script-response-body https://raw.githubusercontent.com/Q39547190/niubi/main/nanaSP2.js
+^http[s]?:\/\/pwa.+(user|ad|shorts|v1).+(appinfo|info\?|poster\?|videos\/1\?).+ url script-response-body https://raw.githubusercontent.com/Q39547190/niubi/main/nanaSP2.js
 
 [mitm] 
 hostname =*pwa*
@@ -16,11 +16,19 @@ hostname =*pwa*
 var body = $response.body;
 var url = $request.url;
 var parse = JSON.parse(body);
+
+if (url.indexOf("/v1/appinfo") != -1) {
+    parse = {"ad":{"cover_display":true,"cover_image":"https:\/\/nn.juyoumalls.com\/kaiyuan\/20221216-x1080-2052.jpg","cover_link":"https:\/\/x7058.com:54433","img_url":"nn.juyoumalls.com"},"android":{"allow":true,"announcement":"","chk_prefix":1,"collect_premium":true,"downloads":["https:\/\/public.bici-fund.com\/android\/NANA.apk"],"latest_version":"1.2.34","live_title":"","live_url":"","message":"中车YYDS\n永久破解会员","payload":true,"qrcode_img_url":"https:\/\/nn.juyoumalls.com\/default\/20221225-banner.jpg","sub_message":"https:\/\/17nana.one","title":"中车专属破解‼️","version":"1.2.28"},"binding":{"default":{"type":"email"},"email":{"countdown":100,"switch":true},"phone":{"countdown":300,"switch":true}},"cash":{"maintain":false},"confirm_code":{"limit":3},"follower_import_switch":true,"forever_image":"https:\/\/nn.juyoumalls.com\/default\/qr_20221115.png","forever_link":"https:\/\/17nana.one","home":{"news_content":"公告：务必收藏永久载点！https:\/\/17nana.one"},"ios":{"allow":true,"announcement":"","collect_premium":true,"downloads":["itms-services:\/\/?action=download-manifest&url=https:\/\/public.sskdji.cn\/xiaofei\/manifest.plist","itms-services:\/\/?action=download-manifest&url=https:\/\/public.hllmy.cn\/xiaofei\/manifest.plist","itms-services:\/\/?action=download-manifest&url=https:\/\/public.sxwhs.com\/xiaofei\/manifest.plist"],"latest_version":"1.2.0","live_title":"","live_url":"","message":"中车YYDS\n永久破解会员","payload":true,"qrcode_img_url":"https:\/\/nn.juyoumalls.com\/default\/20221225-banner.jpg","sub_message":"https:\/\/17nana.one","title":"中车专属破解‼️","version":"1.2.0"},"launch":{"image":"https:\/\/nn.juyoumalls.com\/default\/new_launch.jpg","ipad_image":"https:\/\/nn.juyoumalls.com\/default\/new_launch.jpg"},"novip":{"network":{"lock":false}},"player_mid_free_text":{"cn":"开通VIP享受'高清高速与最新国产资源!'","tw":"開通VIP享受'高清高速與最新國產資源!'"},"player_top_free_text":{"cn":"VIP会员限量优惠中！","tw":"VIP會員限量優惠中！"},"pwa":{"allow":true,"home_forever_link":"https:\/\/nnnna.store\/r9n66","jump":"https:\/\/na-pwa.live","launch":{"image":"https:\/\/nn.juyoumalls.com\/default\/new_PWA_launch1.jpg","ipad_image":"https:\/\/nn.juyoumalls.com\/default\/new_PWA_launch2.jpg"},"message":"中车YYDS\n永久破解会员","qrcode_img_url":"https:\/\/nn.juyoumalls.com\/default\/20221225-banner.jpg","sub_message":"https:\/\/17nana.one","title":"中车专属破解‼️"},"share":{"days":6,"play_popup_interval":5},"tf":{"alert":{"content":["请至最新官网下载最新版","商店版若在维修请先使用轻量版"]},"bundleid":"com.taskorganization.ios","latest_version":"1.2.26","urls":{"com.taskorganization.ios":"https:\/\/ronglan19.zhansha.tv\/app\/gpwa59"},"version":["1.2.20","1.2.21","1.2.22","1.2.23","1.2.24","1.2.25","1.2.26"]},"web":{"jump":"https:\/\/na-h5.live"}};
+    body = JSON.stringify(parse);
+
+$notify("中车专属破解-娜娜视频🚗","****破解代码注入成功****","永久vip破解成功‼️");
+$done({ "body": body });
+}
+
 if (url.indexOf("/user/info") != -1) {
     parse = {"status":{"code":200,"message":"success"},"response":{"user_id":99999999,"email":null,"phone":18888888888,"vip":true,"expiry":9999999999,"invite_code":"us52806408","invite_count":null,"promoter":null,"points":null,"no_purchase":true,"shop_icon":"first","shop_link":"\/v1\/shop\/2","video_views":[10,10]}};
     body = JSON.stringify(parse);
 
-$notify("中车专属破解-娜娜视频🚗","****破解代码注入成功****","永久vip破解成功‼️");
 $done({ "body": body });
 }
 
