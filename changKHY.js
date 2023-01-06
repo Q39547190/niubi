@@ -25,7 +25,7 @@ body = JSON.stringify(vip);
 }
 
 if (url.indexOf("/My/myVipNew") != -1) {
-    vip.data.MENU_NAME = "中车专属破解";
+    vip.data.menu = [];
 body = JSON.stringify(vip);
 }
 $done({body});
