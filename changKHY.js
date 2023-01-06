@@ -6,7 +6,7 @@
 [rewrite_local]
 # > 畅K互娱VIP全部功能
 
-^http[s]?:\/\/.+ycvod.+(/My/my|Home).+(myVipNew|UserInfo) url script-response-body https://raw.githubusercontent.com/Q39547190/niubi/main/changKHY.js
+^http[s]?:\/\/.+ycvod.+(/My|Home).+(myVipNew|UserInfo) url script-response-body https://raw.githubusercontent.com/Q39547190/niubi/main/changKHY.js
 
 [mitm] 
 hostname =*interface.ycvod.cn*
