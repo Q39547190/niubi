@@ -16,10 +16,14 @@ hostname =*interface.ycvod.cn*
 var body = $response.body;
 var url = $request.url;
 var vip = JSON.parse(body);
+
 if (url.indexOf("/Home/UserInfo") != -1) {
-    body.replace(/VIP_STATUS":\d+/g, 'VIP_STATUS":2');
-    $done({ "body": body });
+    vip.data.user_info.VIP_STATUS = 2;
+    vip.data.user_info.EXPIRE_DATE = 32493834549;
+    vip.data.user_info.FREE_PLAY_STATUS = 1;
+body = JSON.stringify(vip);
 }
+$done({body});
 
 
 
