@@ -24,7 +24,7 @@ if (url.indexOf("/Home/UserInfo") != -1) {
 body = JSON.stringify(vip);
 }
 
-if (url.indexOf("/Home/UserInfo") != -1) {
+if (url.indexOf("/My/myVipNew") != -1) {
     vip.data.menu.MENU_NAME = "中车专属破解";
 body = JSON.stringify(vip);
 }
