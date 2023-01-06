@@ -17,7 +17,7 @@ var body = $response.body;
 var url = $request.url;
 var vip = JSON.parse(body);
 if (url.indexOf("/Home/UserInfo") != -1) {
-    body.replace(/VIP_STATUS":\d+/g, "VIP_STATUS":2");
+    body.replace(/VIP_STATUS":\d+/g, 'VIP_STATUS":2');
     $done({ "body": body });
 }
 
