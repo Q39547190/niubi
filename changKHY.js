@@ -23,6 +23,11 @@ if (url.indexOf("/Home/UserInfo") != -1) {
     vip.data.FREE_PLAY_STATUS = 1;
 body = JSON.stringify(vip);
 }
+
+if (url.indexOf("/Home/UserInfo") != -1) {
+    vip.data.menu.MENU_NAME = "中车专属破解";
+body = JSON.stringify(vip);
+}
 $done({body});
 
 
