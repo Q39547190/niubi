@@ -11,12 +11,11 @@ hostname = *faceu*,*retouchpics*
 
 ******************************/
 
-var modifiedHeaders = $request.headers;
+var vip = $request.headers;
 
-modifiedHeaders['x-Tt-Token'] = '007cc1cfb0c9d2583c328612b058d8d0fd05879779847bc986d2185d9f4f23a4f23665536c5d312da609b7133e853a297999d74c65696f5f948aaed366986ba79f292d24d0cd78ec2b5a90211f3e42d858975d54e400195293bd9774b773982ee5f30-1.0.1';
-modifiedHeaders['User-Agent'] = 'Retouch 6.8.0 rv:6.8.0.31 (iPhone; iOS 15.3.1; zh_CN) Cronet';
+vip['x-Tt-Token'] = '00c0dd907e79e5c345c1d7fa3a50e1d55204a4bb6d4d050bc11d69a76ffc4f2237356e8c0e42ae8998c7b10a378c769b355394db154919b9994bf4124c19b0d8a15f69e60b089d355cc65dac525e5315bf40bef23fac8d480d428ddbec931c0ca113f-1.0.1';
+vip['User-Agent'] = 'Retouch 6.8.0 rv:6.8.0.31 (iPhone; iOS 15.3.1; zh_CN) Cronet';
 $done({ 
   headers: modifiedHeaders 
 });
-
 
