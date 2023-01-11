@@ -16,7 +16,7 @@ var $request_url = $request.url;
 var parse = JSON.parse($response_body);
 if ($request_url.indexOf("/v1/user/show.json") != -1) {
     $response_body = $response.body.replace(/\"free_trial\"\:\d+/g, "\"free_trial\":1").replace(/\"vip_type\"\:\d+/g, "\"vip_type\":1").replace(/\"fan_count\"\:\d+/g, "\"fan_count\":999999999999").replace(/\"screen_name\"\:\".*?\"/g, "\"screen_name\":\"中车专属破解\"").replace(/\"identity_desc\"\:\".*?\"/g, "\"identity_desc\":\"美图秀秀官方认证美图之星\"");
-parse.data.pendants_content = [{
+parse.data["pendants_content"] = [{
       "url": "https://xximg1.meitudata.com/6852519777427291680.png",
       "link": "meituxiuxiu://webview?url=https%3a%2f%2ftitan-h5.meitu.com%2fxiu-h5%2fframer%2findex.html",
       "width": 62,
