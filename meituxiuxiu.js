@@ -4,7 +4,7 @@
 *******************************
 [rewrite_local]
 # > 美图秀秀(自己去商店下载)
-^https:\/\/.+xiuxiu.+(/user/show.json|/vip/prompt/query.json).+ url script-response-body https://raw.githubusercontent.com/Q39547190/niubi/main/meituxiuxiu.js
+^https:\/\/.+xiuxiu.+(/user/show.json|/vip/prompt/query.json|/users/show_current.json).+ url script-response-body https://raw.githubusercontent.com/Q39547190/niubi/main/meituxiuxiu.js
 
 [mitm] 
 hostname = *xiuxiu*
@@ -39,5 +39,8 @@ parse.data.pendants_content = [{
 $response_body = JSON.stringify(parse);
 } else if ($request_url.indexOf("/v1/vip/prompt/query.json") != -1) {
     $response_body = $response.body.replace(/\"home_prompt\"\:\".*?\"/g, "\"home_prompt\":\"您的会员将于9999-09-09过期❤️\"").replace(/\"home_btn_prompt\"\:\".*?\"/g, "\"home_btn_prompt\":\"永久会员不用看了\"").replace(/\"beautify_btn_prompt\"\:\".*?\"/g, "\"beautify_btn_prompt\":\"\"").replace(/\"beautify_prompt\"\:\".*?\"/g, "\"beautify_prompt\":\"\"");
-}
+}else if ($request_url.indexOf("/users/show_current.json") != -1) {
+$response_body = $response.body.replace(/\"screen_name\"\:\".*?\"/g, "\"screen_name\":\"中车专属破解\"");
+$notify("美图秀秀🐰","****破解代码注入成功****","vip破解成功‼️");
+
 $done({ "body": $response_body });
