@@ -25,6 +25,7 @@ parse.data.identity_new_status = 1;
 parse.data.vip_type = 1;
 parse.data.free_trial = 1;
 parse.data.identity_desc = "美图秀秀官方认证美图之星";
+parse.data.avatar_url = "https://telegraph-image.pages.dev/file/926a64c523b8cda30818a.jpg";
 parse.data.pendants_content = [{
       "url": "https://xximg1.meitudata.com/6852519777427291680.png",
       "link": "meituxiuxiu://webview?url=https%3a%2f%2ftitan-h5.meitu.com%2fxiu-h5%2fframer%2findex.html",
@@ -37,6 +38,6 @@ parse.data.pendants_content = [{
 
 $response_body = JSON.stringify(parse);
 } else if ($request_url.indexOf("/v1/vip/prompt/query.json") != -1) {
-    $response_body = $response.body.replace(/\"home_prompt\"\:\".*?\"/g, "\"home_prompt\":\"您的会员将于9999-09-09过期❤️\"").replace(/\"home_btn_prompt\"\:\".*?\"/g, "\"home_btn_prompt\":\"永久不会过期不用看了\"").replace(/\"beautify_btn_prompt\"\:\".*?\"/g, "\"beautify_btn_prompt\":\"\"").replace(/\"beautify_prompt\"\:\".*?\"/g, "\"beautify_prompt\":\"\"");
+    $response_body = $response.body.replace(/\"home_prompt\"\:\".*?\"/g, "\"home_prompt\":\"您的会员将于9999-09-09过期❤️\"").replace(/\"home_btn_prompt\"\:\".*?\"/g, "\"home_btn_prompt\":\"永久会员不用看了\"").replace(/\"beautify_btn_prompt\"\:\".*?\"/g, "\"beautify_btn_prompt\":\"\"").replace(/\"beautify_prompt\"\:\".*?\"/g, "\"beautify_prompt\":\"\"");
 }
 $done({ "body": $response_body });
