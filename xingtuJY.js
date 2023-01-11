@@ -5,7 +5,7 @@
 [rewrite_local]
 # > 醒图➕剪映界面
 
-^http[s]?:\/\/.+((retouchpics)|(faceu)|(ulikecam)).(com|cn|mobi)\/.+(user|\/v1\/homepage\/pro|ever_photo/space_info).+ url script-response-body https://raw.githubusercontent.com/Q39547190/niubi/main/xingtuJY.js
+^http[s]?:\/\/.+((retouchpics)|(faceu)|(ulikecam)).(com|cn|mobi)\/.+(user|\/v1\/homepage\/pro|ever_photo/space_info|\/subscription\/user_info).+ url script-response-body https://raw.githubusercontent.com/Q39547190/niubi/main/xingtuJY.js
 
 [mitm] 
 hostname = *faceu*,*retouchpics*,*,*.ulikecam.com
@@ -15,6 +15,17 @@ hostname = *faceu*,*retouchpics*,*,*.ulikecam.com
 var body = $response.body;
 var url = $request.url;
 var obj = JSON.parse(body);
+
+if (url.indexOf("/api/v1/user/profile") != -1) {
+
+    obj.data.flag = true;
+    obj.data.is_cancel_subscribe = true;
+    obj.data.end_time = 32494025682;
+    obj.data.start_time = 1673417683;
+    obj.data.uid = "1104356426136016";
+    body = JSON.stringify(obj);
+$notify("轻颜相机📷","****破解代码注入成功****","vip破解成功‼️");
+}
 
 if (url.indexOf("/api/v1/user/profile") != -1) {
     obj.data.user.name = "中车专属破解";
