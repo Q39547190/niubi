@@ -16,7 +16,7 @@ var body = $response.body;
 var url = $request.url;
 var obj = JSON.parse(body);
 
-if (url.indexOf("/api/v1/user/profile") != -1) {
+if (url.indexOf("/subscription/user_info") != -1) {
 
     obj.data.flag = true;
     obj.data.is_cancel_subscribe = true;
