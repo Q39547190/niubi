@@ -4,10 +4,10 @@
 *******************************
 [rewrite_local]
 # > 美图秀秀(自己去商店下载)
-^https:\/\/.+xiuxiu.+(/user/show.json|/vip/prompt/query.json|/users/show_current.json).+ url script-response-body https://raw.githubusercontent.com/Q39547190/niubi/main/meituxiuxiu.js
+^https:\/\/.+(xiuxiu|account).+(/user/show.json|/vip/prompt/query.json|/users/show_current.json) url script-response-body https://raw.githubusercontent.com/Q39547190/niubi/main/meituxiuxiu.js
 
 [mitm] 
-hostname = *xiuxiu*
+hostname = *xiuxiu*,*account*
 
 ******************************/
 
