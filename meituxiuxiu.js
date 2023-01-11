@@ -42,5 +42,6 @@ $response_body = JSON.stringify(parse);
 }else if ($request_url.indexOf("/users/show_current.json") != -1) {
 $response_body = $response.body.replace(/\"screen_name\"\:\".*?\"/g, "\"screen_name\":\"中车专属破解\"");
 $notify("美图秀秀🐰","****破解代码注入成功****","vip破解成功‼️");
+}
 
 $done({ "body": $response_body });
