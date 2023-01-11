@@ -24,7 +24,6 @@ if (url.indexOf("/subscription/user_info") != -1) {
     obj.data.start_time = 1673417683;
     obj.data.uid = "1104356426136016";
     body = JSON.stringify(obj);
-$notify("轻颜相机📷","****破解代码注入成功****","vip破解成功‼️");
 }
 
 if (url.indexOf("/api/v1/user/profile") != -1) {
