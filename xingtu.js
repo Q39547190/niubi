@@ -4,7 +4,7 @@
 *******************************
 [rewrite_local]
 # > 醒图-修出你的美(自己去商店下载)
-^https:\/\/commerce-api\.faceu\.mobi\/commerce\/v1\/subscription\/user_info url script-request-header https://raw.githubusercontent.com/Q39547190/niubi/main/xingtu.js
+^https:\/\/commerce-api\.faceu\.mobi\/commerce\/v1\/subscription\/user_info.+iid.+ url script-request-header https://raw.githubusercontent.com/Q39547190/niubi/main/xingtu.js
 
 [mitm] 
 hostname = *faceu*,*retouchpics*
