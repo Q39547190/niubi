@@ -22,7 +22,10 @@ $notify("醒图🧾","****破解代码注入成功****","vip破解成功‼️")
     body = JSON.stringify(obj);
 }
 if (url.indexOf("/lv/v1/homepage/profile") != -1) {
-    body = body.replace(/name":".*?"/g, "name\":\"中车专属破解").replace(/is_vip":\w+/g, "is_vip\":true");
+    body = body.replace(/name":"[^"]+/g, "name\":\"中车专属破解").replace(/is_vip":\w+/g, "is_vip\":true");
+}
+if (url.indexOf("/ulike/v1/homepage/profile") != -1) {
+    body = body.replace(/name":"[^"]+/g, "name\":\"中车专属破解");
 }
 if (url.indexOf("ever_photo/space_info") != -1) {
     body = body.replace(/space_end\":\d+/g, "space_end\":32493842714");
