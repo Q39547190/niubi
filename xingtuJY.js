@@ -16,23 +16,13 @@ var body = $response.body;
 var url = $request.url;
 var obj = JSON.parse(body);
 
-if (url.indexOf("/subscription/user_info") != -1) {
-
-    obj.data.flag = true;
-    obj.data.is_cancel_subscribe = true;
-    obj.data.end_time = 32494025682;
-    obj.data.start_time = 1673417683;
-    obj.data.uid = "1104356426136016";
-    body = JSON.stringify(obj);
-}
-
 if (url.indexOf("/api/v1/user/profile") != -1) {
     obj.data.user.name = "中车专属破解";
 $notify("醒图🧾","****破解代码注入成功****","vip破解成功‼️");
     body = JSON.stringify(obj);
 }
 if (url.indexOf("/lv/v1/homepage/profile") != -1) {
-    body = body.replace(/name":"[^"]+/g, "name\":\"中车专属破解").replace(/is_vip":\w+/g, "is_vip\":true");
+    body = body.replace(/name":".*?"/g, "name\":\"中车专属破解").replace(/is_vip":\w+/g, "is_vip\":true");
 }
 if (url.indexOf("ever_photo/space_info") != -1) {
     body = body.replace(/space_end\":\d+/g, "space_end\":32493842714");
