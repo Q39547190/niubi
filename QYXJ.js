@@ -4,7 +4,7 @@
 *******************************
 [rewrite_local]
 # > 轻颜相机📷最新版(自己去商店下载)
-^https:\/\/commerce-api\.faceu\.mobi\/commerce\/v1\/subscription\/user_info.+total_memory.+ url script-request-header https://raw.githubusercontent.com/Q39547190/niubi/main/QYXJ.js
+^https:\/\/commerce-api\.faceu\.mobi\/commerce\/v1\/subscription\/user_info.*total_memory.* url script-request-header https://raw.githubusercontent.com/Q39547190/niubi/main/QYXJ.js
 
 [mitm] 
 hostname = *faceu*,*retouchpics*
