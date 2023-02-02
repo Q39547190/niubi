@@ -1,6 +1,7 @@
 /******************************
 中车专属破解
 69AV破解
+下载地址: http://11.69av.live
 *******************************
 [rewrite_local]
 # > 69AV 破解
@@ -62,6 +63,9 @@ body = JSON.stringify(parse);
 
 if (url.indexOf("/Vod/getList") != -1) {
     body = $response.body.replace(/https:\/\/s3.bmp.ovh\/imgs\/2023\/01\/13\/82be0b2d524eb561.gif/g, "https://telegraph-image.pages.dev/file/926a64c523b8cda30818a.jpg");
+
+$notify("中车专属破解-69AV🚗","****破解代码注入成功****","永久vip破解成功‼️");
+
 }
 $done({ "body": body });
 
