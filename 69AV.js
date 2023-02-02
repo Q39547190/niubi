@@ -5,7 +5,7 @@
 [rewrite_local]
 # > 69AV 破解
 
-^http://((jiekou1)|(jiekou))\.(shijiujin|jable44)\.(com|shop)\/(Login|Vod)\/(info|getList |sygg|gg) url script-response-body https://raw.githubusercontent.com/Q39547190/niubi/main/69AV.js
+^http://((jiekou1)|(jiekou))\.(shijiujin|jable44)\.(com|shop)\/(Login|Vod)\/(info|getList|sygg|gg) url script-response-body https://raw.githubusercontent.com/Q39547190/niubi/main/69AV.js
 
 [mitm] 
 hostname = *jiekou*,*jiekou1*
