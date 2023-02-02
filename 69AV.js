@@ -61,7 +61,7 @@ body = JSON.stringify(parse);
 }
 
 if (url.indexOf("/Vod/getList") != -1) {
-    body = $response.body.replace(/http[s]?:\/\/.+imgs.+gif/g, "https://telegraph-image.pages.dev/file/926a64c523b8cda30818a.jpg");
+    body = $response.body.replace(/https:\/\/s3.bmp.ovh\/imgs\/2023\/01\/13\/82be0b2d524eb561.gif/g, "https://telegraph-image.pages.dev/file/926a64c523b8cda30818a.jpg");
 }
 $done({ "body": body });
 
