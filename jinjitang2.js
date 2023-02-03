@@ -15,7 +15,7 @@ hostname = *clsq99*
 var body = $response.body;
 var url = $request.url;
 var parse = JSON.parse(body);
-if (url.indexOf("/Login/info") != -1) {
+if (url.indexOf("/user/centerUserInfo") != -1) {
     parse = {
   "code" : 200,
   "data" : {
