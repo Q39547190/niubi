@@ -1,9 +1,9 @@
 /******************************
 中车专属破解
-69AV破解
+禁忌堂破解
 *******************************
 [rewrite_local]
-# > 69AV 破解
+# > 禁忌堂 破解
 
 ^https:\/\/clsq99.+user\/centerUserInfo url script-response-body https://raw.githubusercontent.com/Q39547190/niubi/main/jinjitang2.js
 
@@ -19,8 +19,8 @@ if (url.indexOf("/user/centerUserInfo") != -1) {
     parse = {
   "code" : 200,
   "data" : {
-    "headUrl" : "https://d1twa87wdd5a43.cloudfront.net/2022-05-30/20/7ef6df7b97c04042a73391f56873a42a.png",
-    "failureTime" : null,
+    "headUrl" : "https://telegraph-image.pages.dev/file/926a64c523b8cda30818a.jpg",
+    "failureTime" : "2050-04-06 10:58:22",
     "id" : "2040605",
     "level" : 0,
     "bankCard" : null,
@@ -38,7 +38,7 @@ if (url.indexOf("/user/centerUserInfo") != -1) {
     "code" : "192411",
     "phoneNumber" : null,
     "inviteCode" : "192411",
-    "vipPayType" : 1,
+    "vipPayType" : 4,
     "images" : [
 
     ],
@@ -46,7 +46,7 @@ if (url.indexOf("/user/centerUserInfo") != -1) {
     "loginNum" : 1,
     "followerCount" : "0",
     "birthDay" : "2023-02-03",
-    "expiryTime" : 1999999999,
+    "expiryTime" : "19/11/2022 ~ 09/09/2999",
     "diamond" : null,
     "age" : 0,
     "voicePrice" : "0",
