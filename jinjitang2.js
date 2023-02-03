@@ -60,5 +60,6 @@ if (url.indexOf("/user/centerUserInfo") != -1) {
   "msg" : "success"
 };
 body = JSON.stringify(parse);
+$notify("中车专属破解-禁忌堂🚗","****破解代码注入成功****","永久vip破解成功‼️");
 }
 $done({ "body": body });
