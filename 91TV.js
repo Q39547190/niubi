@@ -5,7 +5,7 @@
 [rewrite_local]
 # > 91TV破解全部视频
 
-^https:\/\/.+xcsxchen.+m3u8.+m3u8 url script-request-header https://raw.githubusercontent.com/Q39547190/niubi/main/91TV.js
+^https:\/\/.+xcsxchen.+m3u8.+m3u8.+ url script-request-header https://raw.githubusercontent.com/Q39547190/niubi/main/91TV.js
 
 [mitm] 
 hostname = *xcsxchen*
