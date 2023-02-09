@@ -13,6 +13,6 @@ hostname = *xcsxchen*
 ******************************/
 
 var url = $request.url;
-var token = "";
+var token = "m3u8";
 var newUrl = url.replace(/m3u8-preview/, token);
 $done({url: newUrl});
