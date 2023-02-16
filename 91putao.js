@@ -16,11 +16,12 @@ hostname =*h84ug5*
 var body = $response.body;
 var url = $request.url;
 var parse = JSON.parse(body);
+var img = '"advUrl":"https://telegraph-image.pages.dev/file/926a64c523b8cda30818a.jpg"';
 
 if (url.indexOf("mode\/(playingAdv|av|vipCenterBanner") != -1) {
-    body = $response.body.replace(/\"advUrl\"\:\".*?\"/g, "\"advUrl\":\"https://telegraph-image.pages.dev/file/926a64c523b8cda30818a.jpg\"");
+    Newbody = body.replace(/"advUrl":".*?"/, img);
 
-$done({ "body": body });
+$done({ "body": Newbody });
 }
 
 if (url.indexOf("/popNotice/list") != -1) {
