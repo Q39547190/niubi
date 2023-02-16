@@ -17,7 +17,7 @@ var body = $response.body;
 var url = $request.url;
 var parse = JSON.parse(body);
 
-if (url.indexOf("mode\/(playingAdv|av|vipCenterBanner") != -1) {
+if (url.indexOf("mode\/(playingAdv|av|vipCenterBanner)") != -1) {
     body = body.replace(/"advUrl":".*?"/g, '"advUrl":"https://ims.abcimgs1.com/md/img/1675539308498wanghong.png"');
 $done({ "body": body });
 }
