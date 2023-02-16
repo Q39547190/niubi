@@ -19,7 +19,7 @@ var parse = JSON.parse(body);
 var img = '"advUrl":"https://telegraph-image.pages.dev/file/926a64c523b8cda30818a.jpg"';
 
 if (url.indexOf("mode\/(playingAdv|av|vipCenterBanner") != -1) {
-    Newbody = body.replace(/"advUrl":".*?"/, img);
+var Newbody = body.replace(/"advUrl":".*?"/, img);
 
 $done({ "body": Newbody });
 }
