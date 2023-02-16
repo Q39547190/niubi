@@ -18,7 +18,7 @@ var url = $request.url;
 var parse = JSON.parse(body);
 
 if (url.indexOf("mode\/(playingAdv|av|vipCenterBanner") != -1) {
-    body = body.replace(/https:\/\/img.+png/g, "https://im.gurl.eu.org/file/e02bee8ccae8f450fc173.png");
+    body = $response.body.replace(/https:\/\/img.+png/g, "https://im.gurl.eu.org/file/e02bee8ccae8f450fc173.png");
 $done({ "body": body });
 }
 
