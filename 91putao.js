@@ -6,7 +6,7 @@
 [rewrite_local]
 # > 91葡萄
 
-^https:\/\/.+h84ug5.+(resource|member)\/(memberInfo|mode|popNotice)\/(vipCenterBanner|list|av|playingAdv|getInfoById) url script-response-body https://raw.githubusercontent.com/Q39547190/niubi/main/91putao.js
+^https:\/\/.+h84ug5.+(resource|member)\/(memberInfo|mode|popNotice|notice)\/(vipCenterBanner|list|av|playingAdv|getInfoById|jx) url script-response-body https://raw.githubusercontent.com/Q39547190/niubi/main/91putao.js
 
 [mitm] 
 hostname =*h84ug5*
@@ -17,7 +17,17 @@ var body = $response.body;
 var url = $request.url;
 var parse = JSON.parse(body);
 var hack = /"advUrl":".*?"/g;
-if (url.indexOf("mode/av") != -1) {
+var title = /"title":".*?"/g;
+
+if (url.indexOf("/notice/list") != -1) {
+
+body = body.replace(title,'"title":"中车专属破解-注入破解代码成功，破解全部功能🚗🚗"');
+$done({
+    body
+});
+}
+
+if (url.indexOf("/mode/av") != -1) {
 
 body = body.replace(hack,'"advUrl":"https://im.gurl.eu.org/file/e02bee8ccae8f450fc173.png"');
 $done({
@@ -25,7 +35,7 @@ $done({
 });
 }
 
-if (url.indexOf("mode/jx") != -1) {
+if (url.indexOf("/mode/jx") != -1) {
 
 body = body.replace(hack,'"advUrl":"https://im.gurl.eu.org/file/e02bee8ccae8f450fc173.png"');
 $done({
@@ -33,7 +43,7 @@ $done({
 });
 }
 
-if (url.indexOf("mode/vipCenterBanner") != -1) {
+if (url.indexOf("/mode/vipCenterBanner") != -1) {
 
 body = body.replace(hack,'"advUrl":"https://im.gurl.eu.org/file/e02bee8ccae8f450fc173.png"');
 $done({
@@ -41,7 +51,7 @@ $done({
 });
 }
 
-if (url.indexOf("mode/playingAdv") != -1) {
+if (url.indexOf("/mode/playingAdv") != -1) {
 
 body = body.replace(hack,'"advUrl":"https://im.gurl.eu.org/file/e02bee8ccae8f450fc173.png"');
 $done({
