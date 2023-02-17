@@ -16,9 +16,9 @@ hostname =*h84ug5*
 var body = $response.body;
 var url = $request.url;
 var parse = JSON.parse(body);
-
+var hack = /"advUrl":".*?"/g;
 if (url.indexOf("mode\/(playingAdv|av|vipCenterBanner") != -1) {
-    body = $response.body.replace(/http[s]?:\/\/.+png/g, "https://im.gurl.eu.org/file/e02bee8ccae8f450fc173.png");
+    body = $response.body.replace(hack, "advUrl":'"https://im.gurl.eu.org/file/e02bee8ccae8f450fc173.png"');
 $done({ "body": body });
 }
 
