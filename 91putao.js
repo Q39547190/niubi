@@ -1,7 +1,7 @@
 /******************************
 中车专属破解
 91葡萄
-下载地址 https://h5.xbounpm.cn
+下载地址 https://91p65.app/?channelCode=0000&inviteCode=sG9MoCEQ
 *******************************
 [rewrite_local]
 # > 91葡萄
