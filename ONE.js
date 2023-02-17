@@ -29,6 +29,8 @@ $notify("中车专属破解-one一个🚗","****破解代码注入成功****","�
 if (url.indexOf("/comment/list") != -1) {
 
 vip['Host'] = 'api.0qda82zu.com';
+vip['sign'] = 'a20f599e9a4ffcb449d82bd133462ee6';
+vip['timestamp'] = '1676622929';
 vip['Referer'] = 'https://byym79.com/';
 vip['User-Agent'] = 'Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.0 Mobile/15E148 Safari/604.1';
 vip['Origin'] = 'https://byym79.com';
@@ -44,6 +46,8 @@ $done({
 if (url.indexOf("/article/detail") != -1) {
 
 vip['Host'] = 'api.0qda82zu.com';
+vip['sign'] = 'a20f599e9a4ffcb449d82bd133462ee6';
+vip['timestamp'] = '1676622929';
 vip['Referer'] = 'https://byym79.com/';
 vip['User-Agent'] = 'Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.0 Mobile/15E148 Safari/604.1';
 vip['Origin'] = 'https://byym79.com';
