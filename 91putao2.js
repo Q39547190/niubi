@@ -5,7 +5,7 @@
 [rewrite_local]
 # > 91葡萄
 
-^https:\/\/.+abcimgs1.+m3u8.+ url script-request-header https://raw.githubusercontent.com/Q39547190/niubi/main/91putao2.js
+^https:\/\/.+abcimgs1.+m3u8 url script-request-header https://raw.githubusercontent.com/Q39547190/niubi/main/91putao2.js
 
 [mitm] 
 hostname = *abcimgs1*
