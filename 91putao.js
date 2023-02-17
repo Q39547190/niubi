@@ -6,10 +6,10 @@
 [rewrite_local]
 # > 91葡萄
 
-^https:\/\/.+h84ug5.+(resource|member)\/(memberInfo|mode|popNotice|notice)\/(vipCenterBanner|list|av|playingAdv|getInfoById|jx) url script-response-body https://raw.githubusercontent.com/Q39547190/niubi/main/91putao.js
+^https:\/\/.+(h84ug5|u2f71m).+(resource|member)\/(memberInfo|mode|popNotice|notice)\/(vipCenterBanner|list|av|playingAdv|getInfoById|jx) url script-response-body https://raw.githubusercontent.com/Q39547190/niubi/main/91putao.js
 
 [mitm] 
-hostname =*h84ug5*
+hostname =*h84ug5*,*u2f71m*
 
 ******************************/
 
