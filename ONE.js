@@ -17,7 +17,7 @@ var vip = $request.headers;
 var token = "";
 var token2 = "2.4";
 var newUrl = url.replace(/-sample/, token);
-var newUrl2 = url.replace(/2.4/, token);
+var newUrl2 = url.replace(/2.5/, token);
 
 if (url.indexOf("mp4") != -1) {
 $done({url: newUrl});
