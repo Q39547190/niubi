@@ -29,6 +29,7 @@ $notify("中车专属破解-one一个🚗","****破解代码注入成功****","�
 if (url.indexOf("/comment/list") != -1) {
 
 vip['Host'] = 'api.0qda82zu.com';
+vip['Referer'] = 'https://byym79.com/';
 $done({
     headers : vip
 });
@@ -37,6 +38,7 @@ $done({
 if (url.indexOf("/article/detail") != -1) {
 
 vip['Host'] = 'api.0qda82zu.com';
+vip['Referer'] = 'https://byym79.com/';
 $done({
     headers : vip
 });
