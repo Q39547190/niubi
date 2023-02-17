@@ -71,7 +71,7 @@ $done({ "body": body });
 
 if (url.indexOf("/memberInfo/getInfoById") != -1) {
 
-parse = {"code":200,"msg":null,"data":{"id":1107380,"profilePhoto":null,"nickname":"中车大神","robot":0,"officialAccount":0,"platform":2,"unitType":"50970640-37B4-4034-8D85-604568CCE96F","level":0,"phone":null,"password":null,"sex":1,"sign":"中车专属破解-破解全部视频","channelCode":"0000","appLink":"https://91p65.app/?channelCode=0000&inviteCode=sG9MoCEQ","openNum":null,"goldCoin":0,"watchNum":0,"movieTicketNum":0,"vip":2,"vipName":"中车专属永久卡","vipExpirationTime":"2099-02-17 19:34:54","inviteMember":null,"inviteCode":"sG9MoCEQ","bindInviteCode":null,"inviteNum":0,"status":1,"registerTime":"2023-02-16 19:21:22","lastLoginTime":"2023-02-16 19:21:24","lastLoginIp":null,"registerIp":"112.96.176.150","lastFindTime":null,"updateTime":"2023-02-16 21:00:25"}};
+parse = {"code":200,"msg":null,"data":{"id":1107380,"profilePhoto":null,"nickname":"中车大神","robot":0,"officialAccount":0,"platform":2,"unitType":"50970640-37B4-4034-8D85-604568CCE96F","level":0,"phone":null,"password":null,"sex":1,"sign":"中车专属破解-破解全部视频","channelCode":"0000","appLink":"https://91p65.app/?channelCode=0000&inviteCode=sG9MoCEQ","openNum":null,"goldCoin":0,"watchNum":0,"movieTicketNum":0,"vip":5,"vipName":"中车专属永久卡","vipExpirationTime":"2099-02-17 19:34:54","inviteMember":null,"inviteCode":"sG9MoCEQ","bindInviteCode":null,"inviteNum":0,"status":1,"registerTime":"2023-02-16 19:21:22","lastLoginTime":"2023-02-16 19:21:24","lastLoginIp":null,"registerIp":"112.96.176.150","lastFindTime":null,"updateTime":"2023-02-16 21:00:25"}};
     body = JSON.stringify(parse);
 $done({ "body": body });
 }
