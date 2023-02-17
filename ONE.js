@@ -5,7 +5,7 @@ ONE一个🔞
 [rewrite_local]
 # > ONE一个🔞
 
-^https:\/\/.+(cdchuangao|21ec74|0qda82zu).+(ad|one|comment).+(mp4|space|list) url script-request-header https://raw.githubusercontent.com/Q39547190/niubi/main/ONE.js
+^https:\/\/.+(cdchuangao|21ec74|0qda82zu).+(ad|one|comment|article).+(mp4|space|list|detail) url script-request-header https://raw.githubusercontent.com/Q39547190/niubi/main/ONE.js
 
 [mitm] 
 hostname = *cdchuangao*,*21ec74*
@@ -27,6 +27,14 @@ $notify("中车专属破解-one一个🚗","****破解代码注入成功****","�
 }
 
 if (url.indexOf("/comment/list") != -1) {
+
+vip['Host'] = 'api.0qda82zu.com';
+$done({
+    headers : vip
+});
+}
+
+if (url.indexOf("/article/detail") != -1) {
 
 vip['Host'] = 'api.0qda82zu.com';
 $done({
