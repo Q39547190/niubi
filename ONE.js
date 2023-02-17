@@ -13,10 +13,9 @@ hostname = *cdchuangao*,*21ec74*
 ******************************/
 
 var url = $request.url;
+var vip = $request.headers;
 var token = "";
-var token2 = "api.0qda82zu.com";
 var newUrl = url.replace(/-sample/, token);
-var newUrl2 = url.replace(/api.21ec74.com/, token2);
 
 if (url.indexOf("mp4") != -1) {
 $done({url: newUrl});
@@ -28,5 +27,9 @@ $notify("中车专属破解-one一个🚗","****破解代码注入成功****","�
 }
 
 if (url.indexOf("/comment/list") != -1) {
-$done({url: newUrl2});
+
+vip['Host'] = 'api.0qda82zu.com';
+$done({
+    headers : vip
+});
 }
