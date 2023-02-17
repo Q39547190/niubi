@@ -25,6 +25,30 @@ $done({
 });
 }
 
+if (url.indexOf("mode/jx") != -1) {
+
+body = body.replace(hack,'"advUrl":"https://im.gurl.eu.org/file/e02bee8ccae8f450fc173.png"');
+$done({
+    body
+});
+}
+
+if (url.indexOf("mode/vipCenterBanner") != -1) {
+
+body = body.replace(hack,'"advUrl":"https://im.gurl.eu.org/file/e02bee8ccae8f450fc173.png"');
+$done({
+    body
+});
+}
+
+if (url.indexOf("mode/playingAdv") != -1) {
+
+body = body.replace(hack,'"advUrl":"https://im.gurl.eu.org/file/e02bee8ccae8f450fc173.png"');
+$done({
+    body
+});
+}
+
 if (url.indexOf("/popNotice/list") != -1) {
 
 parse = {"msg":"操作成功","code":200,"data":[{"id":19,"status":1,"title":"中车专属破解","type":2,"imgUrl":"https://ims.abcimgs1.comhttps://video.qoffxs.com/md/img/1673609620888弹窗--邀请.png","jumpUrl":null,"jumpUrlType":1,"interJumpUrl":1,"content":"44CQ5Lit6L2m5LiT5bGe56C06Kej44CR5rOo5YWl5Lit6L2m5LiT5bGebG9nb+KAqOOAkOS4rei9puS4k+WxnuegtOino+OAkeWujOWFqOegtOino+WFqOmDqOinhumikfCfmpfigKjjgJDkuK3ovablpKfnpZ7jgJHkuK3ovaZZWURTCg==","sort":999,"createBy":"yys","updateBy":"yys"},{"id":23,"status":1,"title":"中车专属破解","type":1,"imgUrl":"https://im.gurl.eu.org/file/e02bee8ccae8f450fc173.png","jumpUrl":null,"jumpUrlType":1,"interJumpUrl":1,"content":"bnVsbA==","sort":999,"createBy":"yys","updateBy":"yys"}]};
