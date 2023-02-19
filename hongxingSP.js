@@ -10,7 +10,7 @@
 ^https:\/\/.+peilinwenhua.+m3u8.+ url script-request-header https://raw.githubusercontent.com/Q39547190/niubi/main/hongxingSP.js
 
 [mitm] 
-hostname = *peilinwenhua*,
+hostname = *peilinwenhua*
 
 ******************************/
 
