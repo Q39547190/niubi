@@ -22,8 +22,8 @@ var content = /"content":".*?"/g;
 var nickname = /"nickname":".*?"/g;
 var userVip = /"userVip":"\d+"/g;
 var expiredTime = /"expiredTime":"\d+"/g;
-var userVip = /"isVip":"\d+"/g;
-var userVip = /"isTrysee":"\d+"/g;
+var isVip = /"isVip":"\d+"/g;
+var isTrysee = /"isTrysee":"\d+"/g;
 
 if (url.indexOf("resource/adInfoPageList?adSpaceId=1") != -1) {
 
