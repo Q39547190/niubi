@@ -6,7 +6,7 @@
 [rewrite_local]
 # > 加藤视频
 
-^https:\/\/api.jttv0(1|2|3|4).+\/(resource|user)\/(adInfoPageList|getWindowNotice|homePage).+ url script-response-body https://raw.githubusercontent.com/Q39547190/niubi/main/jiatengSP.js
+^https:\/\/api.jttv0(1|2|3|4).+\/(resource|user|video)\/(adInfoPageList|getWindowNotice|homePage|longvideoinfo/superiorList).+ url script-response-body https://raw.githubusercontent.com/Q39547190/niubi/main/jiatengSP.js
 
 [mitm] 
 hostname =*jttv01*,*jttv03*,*jttv02*
@@ -22,6 +22,8 @@ var content = /"content":".*?"/g;
 var nickname = /"nickname":".*?"/g;
 var userVip = /"userVip":"\d+"/g;
 var expiredTime = /"expiredTime":"\d+"/g;
+var userVip = /"isVip":"\d+"/g;
+var userVip = /"isTrysee":"\d+"/g;
 
 if (url.indexOf("resource/adInfoPageList?adSpaceId=1") != -1) {
 
@@ -78,6 +80,14 @@ parse.data.vipPvgList = [{"code":"EXC_DISCOUNT","description":"专属折扣","fl
 body = JSON.stringify(parse);
 
 body = body.replace(nickname,'"nickname": "中车大神"').replace(userVip,'"userVip": 1').replace(expiredTime,'"expiredTime": 1999999999999');
+$done({
+    body
+});
+}
+
+if (url.indexOf("/video/longvideoinfo/superiorList") != -1) {
+
+body = body.replace(isTrysee,'""isTrysee":0').replace(isVip,'"isVip":0');
 $done({
     body
 });
