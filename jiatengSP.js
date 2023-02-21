@@ -87,7 +87,7 @@ $done({
 
 if (url.indexOf("/video/longvideoinfo/superiorList") != -1) {
 
-body = body.replace(isTrysee,'""isTrysee":0').replace(isVip,'"isVip":0');
+body = body.replace(isTrysee,'""isTrysee":0');
 $done({
     body
 });
