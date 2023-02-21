@@ -12,11 +12,6 @@ hostname = *filelong.dzeyu.com*,
 
 ******************************/
 
-var url = $request.url;
-var vip = $request.headers;
-var token = "trailer";
-var newUrl = url.replace(/try/, token);
-$done({url: newUrl});
 
 var __Tis = ["mdsq crack", "url", "headers", "Icy-MetaData", "hasOwnProperty", ">_  一一一一中车专属破解弹窗一一一一 🛠", ">_ 点击一下此通知即可在线观看 🔞", "加藤视频付费💰视频", "msg", "done"];
 const $ = new Env(__Tis[0x0]);
