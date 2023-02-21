@@ -1,7 +1,7 @@
 /******************************
 中车专属破解
 加藤视频
-下载地址 https://91p65.app/?channelCode=0000&inviteCode=sG9MoCEQ
+下载地址 https://cjd234.shop?invitationCode=MDRX92
 *******************************
 [rewrite_local]
 # > 加藤视频
@@ -22,8 +22,6 @@ var content = /"content":".*?"/g;
 var nickname = /"nickname":".*?"/g;
 var userVip = /"userVip":"\d+"/g;
 var expiredTime = /"expiredTime":\d+/g;
-var isVip = /"isVip":\d+/g;
-var isTrysee = /"isTrysee":"\d+"/g;
 
 if (url.indexOf("resource/adInfoPageList?adSpaceId=1") != -1) {
 
@@ -80,14 +78,6 @@ parse.data.vipPvgList = [{"code":"EXC_DISCOUNT","description":"专属折扣","fl
 body = JSON.stringify(parse);
 
 body = body.replace(nickname,'"nickname":"中车大神"').replace(userVip,'"userVip": 1').replace(expiredTime,'"expiredTime": 32493859951000');
-$done({
-    body
-});
-}
-
-if (url.indexOf("/video/longvideoinfo/superiorList") != -1) {
-
-body = body.replace(isTrysee,'""isTrysee":0');
 $done({
     body
 });
