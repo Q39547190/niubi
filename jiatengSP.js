@@ -6,7 +6,7 @@
 [rewrite_local]
 # > 加藤视频
 
-^https:\/\/api.jttv0(1|2|3|4).+\/(resource|user|video)\/(adInfoPageList|getWindowNotice|homePage|longvideoinfo|getUser).+ url script-response-body https://raw.githubusercontent.com/Q39547190/niubi/main/jiatengSP.js
+^https:\/\/api.jttv0(1|2|3|4).+\/(resource|user)\/(adInfoPageList|getWindowNotice|homePage|getUser).+ url script-response-body https://raw.githubusercontent.com/Q39547190/niubi/main/jiatengSP.js
 
 [mitm] 
 hostname =*jttv01*,*jttv03*,*jttv02*
