@@ -6,7 +6,7 @@
 [rewrite_local]
 # > 加藤视频
 
-^https:\/\/api.jttv0(1|2|3|4).+\/(resource|user|video)\/(adInfoPageList|getWindowNotice|homePage|longvideoinfo).+ url script-response-body https://raw.githubusercontent.com/Q39547190/niubi/main/jiatengSP.js
+^https:\/\/api.jttv0(1|2|3|4).+\/(resource|user|video)\/(adInfoPageList|getWindowNotice|homePage|longvideoinfo|getUser).+ url script-response-body https://raw.githubusercontent.com/Q39547190/niubi/main/jiatengSP.js
 
 [mitm] 
 hostname =*jttv01*,*jttv03*,*jttv02*
@@ -88,6 +88,14 @@ $done({
 if (url.indexOf("/video/longvideoinfo/superiorList") != -1) {
 
 body = body.replace(isTrysee,'""isTrysee":0');
+$done({
+    body
+});
+}
+
+if (url.indexOf("/user/getUser") != -1) {
+
+body = body.replace(nickname,'"nickname": "中车大神"').replace(userVip,'"userVip": 1').replace(expiredTime,'"expiredTime": 1999999999999');
 $done({
     body
 });
