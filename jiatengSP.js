@@ -78,7 +78,7 @@ parse.data.vipPvgList = [{"code":"EXC_DISCOUNT","description":"专属折扣","fl
 body = JSON.stringify(parse);
 
 body = body.replace(nickname,'"nickname": "中车大神"').replace(userVip,'"userVip": 1').replace(expiredTime,'"expiredTime": 1999999999999');
+}
 $done({
     body
 });
-}
