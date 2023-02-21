@@ -18,6 +18,7 @@ var url = $request.url;
 var parse = JSON.parse(body);
 var fsUrl = /"fsUrl":".*?"/g;
 var adUrl = /"adUrl":".*?"/g;
+var content = /"content":".*?"/g;
 
 if (url.indexOf("resource/adInfoPageList?adSpaceId=1") != -1) {
 
@@ -54,6 +55,15 @@ $done({
 if (url.indexOf("resource/adInfoPageList?adSpaceId=5") != -1) {
 
 body = body.replace(fsUrl,'"fsUrl":"https://im.gurl.eu.org/"').replace(adUrl,'"adUrl":"/file/e02bee8ccae8f450fc173.png"');
+$done({
+    body
+});
+}
+
+if (url.indexOf("resource/getWindowNotice") != -1) {
+
+body = body.replace(content,'"content": "<p>中车专属破解-加藤视频🚗</p><p>破解已注入‼️</p><p>成功破解永久VIP⚠️⚠️</p><p>&nbsp;</p>"');
+$notify("中车专属破解-加藤视频一个🚗","****破解代码注入成功****","永久vip破解成功‼️");
 $done({
     body
 });
