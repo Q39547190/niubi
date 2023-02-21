@@ -19,9 +19,9 @@ var parse = JSON.parse(body);
 var fsUrl = /"fsUrl":".*?"/g;
 var adUrl = /"adUrl":".*?"/g;
 var content = /"content":".*?"/g;
-var content = /"nickname":".*?"/g;
-var content = /"userVip":"\d+"/g;
-var content = /"expiredTime":"\d+"/g;
+var nickname = /"nickname":".*?"/g;
+var userVip = /"userVip":"\d+"/g;
+var expiredTime = /"expiredTime":"\d+"/g;
 
 if (url.indexOf("resource/adInfoPageList?adSpaceId=1") != -1) {
 
@@ -78,7 +78,7 @@ parse.data.vipPvgList = [{"code":"EXC_DISCOUNT","description":"专属折扣","fl
 body = JSON.stringify(parse);
 
 body = body.replace(nickname,'"nickname": "中车大神"').replace(userVip,'"userVip": 1').replace(expiredTime,'"expiredTime": 1999999999999');
-}
 $done({
     body
 });
+}
