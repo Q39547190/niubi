@@ -1,0 +1,28 @@
+/******************************
+中车专属破解
+懂阴帝🔞
+
+*******************************
+[rewrite_local]
+# > 懂阴帝🔞
+#下载地址https://2bwhhp.com?pc=LCHZJ7V9
+
+^https:\/\/.+djqyarm.+(m3u8|app).+(m3u8|login\/guest) url script-request-header https://raw.githubusercontent.com/Q39547190/niubi/main/dongyindi.js
+
+https://bfvph.djqyarm.com/api/app/login/guest
+
+[mitm] 
+hostname = *djqyarm*
+
+******************************/
+
+var url = $request.url;
+var vip = $request.headers;
+var token = "";
+var newUrl = url.replace(/_0001/, token);
+$done({url: newUrl});
+
+if (url.indexOf("/login/guest") != -1) {
+
+$notify("中车专属破解-懂阴帝🚗","****破解代码注入成功****","破解全部视频成功‼️");
+}
