@@ -24,5 +24,12 @@ $done({url: newUrl});
 
 if (url.indexOf("/login/guest") != -1) {
 
+vip['device'] = 'ios';
+
 $notify("中车专属破解-懂阴帝🚗","****破解代码注入成功****","破解全部视频成功‼️");
+
+$done({
+    headers : vip
+});
+
 }
