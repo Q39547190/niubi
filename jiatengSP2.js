@@ -12,7 +12,7 @@ hostname = *filelong.dzeyu.com*,
 
 ******************************/
 
-var __Tis = ["mdsq crack", "url", "headers", "X-Playback-Session-Id", "hasOwnProperty", ">_  一一一一中车专属破解弹窗一一一一 🛠", ">_ 点击一下此通知即可在线观看 🔞", "加藤视频金币💰视频破解", "msg", "done"];
+var __Tis = ["mdsq crack", "url", "headers", "Host", "hasOwnProperty", ">_  一一一一中车专属破解弹窗一一一一 🛠", ">_ 点击一下此通知即可在线观看 🔞", "加藤视频金币💰视频破解", "msg", "done"];
 const $ = new Env(__Tis[0x0]);
 let __0xed7e9 = $request[__Tis[0x1]];
 let __qingqiu = $request[__Tis[0x2]];
