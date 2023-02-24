@@ -12,16 +12,13 @@ hostname = *filelong.dzeyu.com*,
 
 ******************************/
 
-var url = $request.url;
-var token = "trailer";
-var newUrl = url.replace(/try/, token);
-$done({url: newUrl});
-var __Tis = ["mdsq crack", "url", "headers", "Host", "hasOwnProperty", ">_  一一一一中车专属破解弹窗一一一一 🛠", ">_ 点击一下此通知即可在线观看 🔞", "加藤视频付费💰视频", "msg", "done"];
+var __Tis = ["mdsq crack", "url", "headers", "X-Playback-Session-Id", "hasOwnProperty", ">_  一一一一中车专属破解弹窗一一一一 🛠", ">_ 点击一下此通知即可在线观看 🔞", "", "msg", "done"];
 const $ = new Env(__Tis[0x0]);
 let __0xed7e9 = $request[__Tis[0x1]];
-let url = $request[__Tis[0x2]];
+let __qingqiu = $request[__Tis[0x2]];
+let __url = __0xed7e9.replace(/try/g, "trailer");
 if (__qingqiu[__Tis[0x4]](__Tis[0x3])) {
-    $[__Tis[0x8]](__Tis[0x5], __Tis[0x6], __Tis[0x7], url)
+    $[__Tis[0x8]](__Tis[0x5], __Tis[0x6], __Tis[0x7], __url)
 };
 $[__Tis[0x9]]({});
 
