@@ -9,8 +9,6 @@
 
 ^https:\/\/.+djqyarm.+(m3u8|app).+(m3u8|login\/guest) url script-request-header https://raw.githubusercontent.com/Q39547190/niubi/main/dongyindi.js
 
-https://bfvph.djqyarm.com/api/app/login/guest
-
 [mitm] 
 hostname = *djqyarm*
 
