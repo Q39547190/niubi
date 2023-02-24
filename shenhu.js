@@ -3,7 +3,7 @@
 *******************************
 [rewrite_local]
 # > 神户live
-^https:\/\/api.domain.liuniukeji.heshuangde.com\/index.php\/App\/Host\/Info url script-request-header https://raw.githubusercontent.com/Q39547190/niubi/main/shenhu.js
+^https:\/\/api.domain.liuniukeji.heshuangde.com\/index.php\/App\/User\/Info url script-request-header https://raw.githubusercontent.com/Q39547190/niubi/main/shenhu.js
 
 [mitm] 
 hostname = *liuniukeji*
@@ -11,9 +11,11 @@ hostname = *liuniukeji*
 *******************************/
 
 var vip = $request.headers;
-vip['user-info'] = '100565099';
-vip['uid'] = '100565099';
-vip['token'] = '05185f113fe7ac5eebaa4e01e50267f4';
+vip['user-info'] = '00000000';
+vip['uid'] = '00000000';
+vip['token'] = '00000000000000000000000000000000000000';
+vip['system'] = '{"name":"000000","systemName":"iOS","systemVersion":"15.3","model":"iPhone","localizedModel":"iPhone","identifierForVendor":"000000-0000-0000-80E4-0000000000000","isPhysicalDevice":true,"isTF":"1","bundleID":"jp.kobe.liveapp"}';
+vip['Content-Length'] = '0';
 $done({
     headers : vip
 });
