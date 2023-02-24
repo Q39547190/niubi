@@ -9,6 +9,7 @@
 
 ^https:\/\/.+djqyarm.+(m3u8|app).+(m3u8|login\/guest) url script-request-header https://raw.githubusercontent.com/Q39547190/niubi/main/dongyindi.js
 
+https://bfvph.djqyarm.com/api/app/login/guest
 
 [mitm] 
 hostname = *djqyarm*
@@ -21,8 +22,6 @@ var token = "";
 var newUrl = url.replace(/_0001/, token);
 
 if (url.indexOf("m3u8") != -1) {
-
-$notify("中车专属破解-懂阴帝🚗","****破解代码注入成功****","破解全部视频成功‼️");
 
 $done({url: newUrl});
 }
