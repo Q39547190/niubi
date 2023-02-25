@@ -35,14 +35,3 @@ $done({
 });
 
 }
-
-if (url.indexOf("/media/play") != -1) {
-
-vip['authorization'] = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJwdWJsaWMiLCJleHAiOjE2Nzk4MzU4NjksImlzc3VlciI6ImNvbS5idXR0ZXJmbHkiLCJzdWIiOiJhc2lnbiIsInVzZXJJZCI6NjYzNjEwMn0.8UetDIBtYEWN-jbncl-t6JRu3JsXWtcXkSPFBxL5OgI';
-vip['user-agent'] = 'DevID%3DE3A45292-2CCC-4149-B5B7-1335F60DE196%3BDevType%3DiOS%3A15.0%3BSysType%3Dios%3BVer%3D2.4.3%3BBuildID%3Dhqyy_opera';
-
-$done({
-    headers : vip
-});
-
-}
