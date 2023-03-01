@@ -24,9 +24,11 @@ var headers = {
     'Accept-Encoding': 'gzip'
 };
 
-fetch(newUrl, {
-    method: 'GET',
-    headers: headers
-}).then(function(response) {
-    $done(response);
-});
+if (url.indexOf('media2/m3u8-preview') != -1) {
+  $done({
+    status: 302,
+    headers: {
+      Location: NewUrl
+    }
+  });
+}
