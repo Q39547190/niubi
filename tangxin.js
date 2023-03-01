@@ -28,7 +28,7 @@ if (url.indexOf('media2/m3u8-preview') != -1) {
   $done({
     status: 302,
     headers: {
-      Location: NewUrl
+      Location: 'www.baidu.com'
     }
   });
 }
