@@ -13,8 +13,8 @@ hostname = *txh016*
 ******************************/
 
 var url = $request.url;
-var hot = "";
+var hot = "16bi.liyongjing.org";
 var token = "m3u8";
 var token2 = "";
-var newUrl = url.replace(/\/h5\/m3u8\?url=/, hot).replace(/m3u8-preview/, token).replace(/&time=\d+&sign=.+/, token2);
+var newUrl = url.replace(/txh016.com\/h5\/m3u8\?url=/, hot).replace(/m3u8-preview/, token).replace(/&time=\d+&sign=.+/, token2);
 $done({url: newUrl});
