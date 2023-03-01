@@ -1,3 +1,17 @@
+/******************************
+中车专属破解
+糖心🔞
+*******************************
+[rewrite_local]
+# > 糖心🔞
+
+
+^https:\/\/txh016.+m3u8.+m3u8.+ url script-request-header https://raw.githubusercontent.com/Q39547190/niubi/main/tangxin.js
+
+[mitm] 
+hostname = *txh016*
+
+******************************/
 var url = $request.url;
 var hot = "16bi.liyongjing.org";
 var token = "m3u8";
