@@ -19,8 +19,3 @@ var token2 = "";
 var newUrl = url.replace(/txh016.com\/h5/\m3u8?url=/, token3).replace(/m3u8-preview/, token).replace(/&time=.+/, token2);
 $done({url: newUrl});
 
-var vip = $request.headers;
-vip['Host'] = '16bi.liyongjing.org';
-$done({
-    headers : vip
-});
