@@ -8,7 +8,7 @@
 
 ^https:\/\/txh016.com\/h5\/m3u8\?url=(.+)&time=.+ - 302 https://16bi.liyongjing.org$1
 
-^https:\/\/16bi.liyongjing.org.+m3u8.+m3u8.+ url script-request-header https://raw.githubusercontent.com/Q39547190/niubi/main/tangxin.js
+^https:\/\/16bi.liyongjing.org.+m3u8.+m3u8 url script-request-header https://raw.githubusercontent.com/Q39547190/niubi/main/tangxin.js
 
 [mitm] 
 hostname = *liyongjing*
