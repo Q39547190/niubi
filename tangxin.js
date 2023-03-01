@@ -5,7 +5,7 @@
 [rewrite_local]
 # > 糖心🔞
 
-^https:\/\/16bi.liyongjing.org.+m3u8.+m3u8.+ url script-request-header https://raw.githubusercontent.com/Q39547190/niubi/main/tangxin.js
+^https:\/\/16bi.liyongjing.org.+m3u8.+m3u8 url script-request-header https://raw.githubusercontent.com/Q39547190/niubi/main/tangxin.js
 
 [mitm] 
 hostname = *liyongjing*
