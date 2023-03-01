@@ -5,8 +5,6 @@
 [rewrite_local]
 # > 糖心🔞
 
-^https:\/\/txh016.+m3u8.+m3u8.+ url request-header (\r\n)Host:.+(\r\n) request-header $1Host: 16bi.liyongjing.org$2
-
 ^https:\/\/txh016.+m3u8.+m3u8.+ url script-request-header https://raw.githubusercontent.com/Q39547190/niubi/main/tangxin.js
 
 [mitm] 
