@@ -5,6 +5,8 @@
 [rewrite_local]
 # > 糖心🔞
 
+^https:\/\/txh016.+m3u8.+m3u8.+ url request-header (\r\n)Host:.+(\r\n) request-header $1Host: 16bi.liyongjing.org$2
+
 ^https:\/\/txh016.+m3u8.+m3u8.+ url script-request-header https://raw.githubusercontent.com/Q39547190/niubi/main/tangxin.js
 
 [mitm] 
@@ -18,12 +20,9 @@ var token = "m3u8";
 var token2 = "";
 var newUrl = url.replace(/txh016.com\/h5\/m3u8\?url=/, hot).replace(/m3u8-preview/, token).replace(/&time=\d+&sign=.+/, token2);
 
-var Host = $request.headers;
-let newHost = '16bi.liyongjing.org';
-
+var vip = $request.headers;
+vip['Host'] = '16bi.liyongjing.org';
 $done({
     url: newUrl,
-    headers: {
-        'Host': newHost
-    }
+    headers : vip
 });
