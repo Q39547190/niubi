@@ -16,6 +16,6 @@ var url = $request.url;
 var token3 = "16bi.liyongjing.org";
 var token = "m3u8";
 var token2 = "";
-var newUrl = url.replace(/txh016.com\/h5/\m3u8?url=/, token3).replace(/m3u8-preview/, token).replace(/&time=.+/, token2);
+var newUrl = url.replace(/m3u8-preview/, token).replace(/&time=.+/, token2);
 $done({url: newUrl});
 
