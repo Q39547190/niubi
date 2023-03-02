@@ -3,7 +3,7 @@
 *******************************
 [rewrite_local]
 # > 神户live
-^https:\/\/api.domain.liuniukeji.heshuangde.com\/index.php\/App\/(User|Account)\/(Info|Login) url script-response-body https://raw.githubusercontent.com/Q39547190/niubi/main/shenhu2.js
+^https:\/\/.+liuniukeji.+\/index.php\/App\/(User|Account)\/(Info|Login) url script-response-body https://raw.githubusercontent.com/Q39547190/niubi/main/shenhu2.js
 
 [mitm] 
 hostname = *liuniukeji*
@@ -22,7 +22,7 @@ $done({ "body": body });
 }
 
 if (url.indexOf("/Account/Login") != -1) {
-   parse = {"status":true,"code":0,"result":{"uid":"100565099","token":"05185f113fe7ac5eebaa4e01e50267f4","code":"86","mobile":"15517816666"}};
+   parse = {"status":true,"code":0,"result":{"uid":"100565099","token":"86be403f029202d22d1afb60cd72f57f","code":"86","mobile":"15517816666"}};
 
 $notify("中车专属破解-神户live🚗","****破解代码注入成功****","永久vip破解成功‼️");
 
