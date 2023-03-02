@@ -3,7 +3,7 @@
 *******************************
 [rewrite_local]
 # > 神户live
-^https:\/\/api.domain.liuniukeji.heshuangde.com\/index.php\/App\/User\/Info url script-request-header https://raw.githubusercontent.com/Q39547190/niubi/main/shenhu.js
+^https:\/\/.+liuniukeji.+\/index.php\/App\/User\/Info url script-request-header https://raw.githubusercontent.com/Q39547190/niubi/main/shenhu.js
 
 [mitm] 
 hostname = *liuniukeji*
