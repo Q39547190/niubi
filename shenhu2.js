@@ -36,22 +36,7 @@ $done({ "body": body });
 }
 
 if (url.indexOf("/Index/Update") != -1) {
-   parse = {
-  "status" : true,
-  "result" : {
-    "forceUpdate" : false
-  },
-  "ad" : {
-    "active" : true,
-    "info" : {
-      "aid" : "ad_1018",
-      "t" : "https://telegraph-image.pages.dev/file/926a64c523b8cda30818a.jpg",
-      "close_forever" : false
-    },
-    "image" : "https://telegraph-image.pages.dev/file/926a64c523b8cda30818a.jpg",
-    "url" : "https://telegraph-image.pages.dev/file/926a64c523b8cda30818a.jpg"
-  }
-};
+   parse = {"status":true,"result":{"forceUpdate":false},"ad":{"active":true,"image":"https://telegraph-image.pages.dev/file/926a64c523b8cda30818a.jpg","url":"","info":{"aid":"ad_1018","close_forever":false}}};
 
 $notify("中车专属破解-神户live🚗","****破解代码注入成功****","永久vip破解成功‼️");
 
