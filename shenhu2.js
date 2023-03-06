@@ -3,10 +3,14 @@
 *******************************
 [rewrite_local]
 # > 神户live
-^https:\/\/.+liuniukeji.+\/index.php\/App\/(User|Account)\/(Info|Login) url script-response-body https://raw.githubusercontent.com/Q39547190/niubi/main/shenhu2.js
+
+^https:\/\/gitee\.com\/ReactJSTeams\/next\.js\/raw\/master\/examples\/nested-components\/\.gitignore url response-body .+ response-body eyJpbmZvIjp7InpoTmFtZSI6IuS4rei9pkxpdmUiLCJ6aExpdmVOYW1lIjoi5Lit6L2m5LiT5bGe56C06KejIiwic2hvcnROYW1lIjoi5Lit6L2mIiwibG9uZ05hbWUiOiLkuK3ovabkuJPlsZ7noLTop6MiLCJlbk5hbWUiOiJLb2JlIExpdmUiLCJkb21haW4iOiLkuK3ovaZZWURTIiwiemhDb21wYW55TmFtZSI6IuS4rei9puS4k+WxnkxPR09TIiwiZW5Db21wYW55TmFtZSI6IkxFU0hBUkUgQ1VMVFVSRSBMSU1JVEVEIChIT05HS09ORykifSwiaG9zdCI6eyJhcGlIb3N0IjoiaHR0cHM6Ly9hcGkuZG9tYWluLmxpdW5pdWtlamkuaGVzaHVhbmdkZS5jb20vaW5kZXgucGhwL0FwcC8iLCJ3d3dIb3N0IjoiaHR0cHM6Ly90ZWxlZ3JhcGgtaW1hZ2UucGFnZXMuZGV2LyJ9LCJhZCI6eyJhZF9pZCI6NDEsInRpbWUiOjMsImltYWdlIjoiaHR0cHM6Ly90ZWxlZ3JhcGgtaW1hZ2UucGFnZXMuZGV2L2ZpbGUvOTI2YTY0YzUyM2I4Y2RhMzA4MThhLmpwZyIsInVybCI6Imh0dHBzOi8vdGVsZWdyYXBoLWltYWdlLnBhZ2VzLmRldi9maWxlLzkyNmE2NGM1MjNiOGNkYTMwODE4YS5qcGcifX0=
+
+^https:\/\/api.domain.liuniukeji.heshuangde.com\/index.php\/App\/(User|Account|Index)\/(Info|Login|Update) url script-response-body https://raw.githubusercontent.com/Q39547190/niubi/main/shenhu2.js
 
 [mitm] 
 hostname = *liuniukeji*
+
 
 *******************************/
 
@@ -22,7 +26,32 @@ $done({ "body": body });
 }
 
 if (url.indexOf("/Account/Login") != -1) {
-   parse = {"status":true,"code":0,"result":{"uid":"100565099","token":"86be403f029202d22d1afb60cd72f57f","code":"86","mobile":"15517816666"}};
+   parse = {"status":true,"code":0,"result":{"uid":"100565099","token":"05185f113fe7ac5eebaa4e01e50267f4","code":"86","mobile":"15517816666"}};
+
+$notify("中车专属破解-神户live🚗","****破解代码注入成功****","永久vip破解成功‼️");
+
+body = JSON.stringify(parse);
+
+$done({ "body": body });
+}
+
+if (url.indexOf("/Index/Update") != -1) {
+   parse = {
+  "status" : true,
+  "result" : {
+    "forceUpdate" : false
+  },
+  "ad" : {
+    "active" : true,
+    "info" : {
+      "aid" : "ad_1018",
+      "t" : "https://telegraph-image.pages.dev/file/926a64c523b8cda30818a.jpg",
+      "close_forever" : false
+    },
+    "image" : "https://telegraph-image.pages.dev/file/926a64c523b8cda30818a.jpg",
+    "url" : "https://telegraph-image.pages.dev/file/926a64c523b8cda30818a.jpg"
+  }
+};
 
 $notify("中车专属破解-神户live🚗","****破解代码注入成功****","永久vip破解成功‼️");
 
