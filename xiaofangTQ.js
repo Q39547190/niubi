@@ -1,23 +1,35 @@
-
+/******************************
+中车专属破解
+*******************************
 [rewrite_local]
 # > 消防请求头提取
 ^https:\/\/qmxfxx.119.gov.cn\/alipay\/mini\/api\/users\/activeScore url script-request-header https://raw.githubusercontent.com/Q39547190/niubi/main/xiaofangTQ.js
 
-[task]
-# 将 Authorization 保存到 iCloud 文档
-
-echo $QX_REQHEADER_ALL > /path/to/消防账号文本.txt
-
 [mitm] 
 hostname =  *119*
 
+*******************************/
 
-[script]
-// 写入文本到文件
+var url = $request.url;
+
+// 获取Authorization请求头中的Token值
+var authHeader = $response.request["Authorization"];
+
+$notify("中车专属破解-神户live🚗","****破解代码注入成功****",authHeader);
+
+if (url.indexOf("/Account/Login") != -1) {
+
 var data = "Hello, World!";
-var path = "/path/to/file.txt";
-$file.write({
-    data: $data({string: data}),
+var path = "/Documents/test.txt";
+$drive.writeFile({
     path: path,
+    data: data,
     encoding: 'plain'
+}, function (result) {
+    if (result.error) {
+        console.log('Failed to write file: ' + result.error);
+    } else {
+        console.log('File saved to iCloud Drive: ' + result.path);
+    }
 });
+}
