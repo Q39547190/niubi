@@ -10,31 +10,22 @@ hostname =  *119*
 
 *******************************/
 
-// 获取请求头中的 Cookie
-const cookie = $request.headers['Cookie'];
+// 获取Authorization请求头中的Token值
+var authHeader = $response.headers["Authorization"];
+if (authHeader) {
+  var token = authHeader.replace("Bearer ", "");
+  // 将Token保存到名为“MY_TOKEN”的变量中，以便后续的脚本使用
+  $persistentStore.write(token, "MY_TOKEN");
+  // 或者将Token保存到名为“消防账号.txt”的文本文件中，以便后续的脚本使用
+  $file.write({
+    "data": token,
+    "path": "/path/to/消防账号.txt",
+    "append": false
+  });
+  
+  // 发送通知告知用户获取Authorization成功
+  $notify("车专属破解", "获取Authorization成功！", "现在可以正常使用车专属破解了。");
+}
 
-// 弹出提示框，显示 Cookie 的内容
-$ui.alert({
-  title: 'Cookie',
-  message: cookie,
-  actions: [{
-    title: '复制',
-    handler: function() {
-      $clipboard.text = cookie;
-      $ui.toast('Cookie 已复制');
-    }
-  }, {
-    title: '储存到备忘录',
-    handler: function() {
-      $app.openURL(`mobilenotes://new?text=${encodeURIComponent(cookie)}`);
-      $ui.toast('Cookie 已储存到备忘录');
-    }
-  }, {
-    title: '取消',
-    style: 'Cancel',
-    handler: function() {}
-  }]
-});
-
-// 调用 $done() 函数表示请求处理完成
+// 继续处理当前请求
 $done();
