@@ -15,7 +15,7 @@ var url = $request.url;
 var vip = $request.headers;
 
 // 获取Authorization请求头中的Token值
-var authHeader = $response.request["Authorization"];
+var authHeader = $request.headers["Authorization"];
 
 vip['Accept'] = '*/*';
 
