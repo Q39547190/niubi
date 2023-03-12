@@ -7,20 +7,26 @@
 
 [task]
 # 将 Authorization 保存到 iCloud 文档
-0 * * * * echo $QX_AUTHORIZATION > $HOME/Library/Mobile\ Documents/com~apple~CloudDocs/消防账号.txt
+
+echo $QX_REQHEADER_ALL > /path/to/your/消防账号文本.txt
 
 [mitm] 
 hostname =  *119*
 
 *******************************/
 
-var url = $request.url;
-var authHeader = $request.headers["Authorization"];
-var vip = $request.headers;
-vip['Accept'] = '*/*';
+var fs = require('fs');
+// 保存请求头的文件路径
+var filePath = '/path/to/消防账号文本.txt';
 
-$notify("中车专属破解-神户live🚗","****破解代码注入成功****",authHeader);
-$done({
-    headers : vip
+$task.fetch({}).then(response => {
+    // 获取完整请求头信息
+    var headers = response.headers;
+    // 将请求头转换为字符串
+    var headersString = JSON.stringify(headers, null, '\t');
+    // 将请求头写入文件
+    fs.writeString(filePath, headersString);
+}, reason => {
+    $done();
 });
 
