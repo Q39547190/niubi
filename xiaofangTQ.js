@@ -1,6 +1,4 @@
-/******************************
-中车专属破解
-*******************************
+
 [rewrite_local]
 # > 消防请求头提取
 ^https:\/\/qmxfxx.119.gov.cn\/alipay\/mini\/api\/users\/activeScore url script-request-header https://raw.githubusercontent.com/Q39547190/niubi/main/xiaofangTQ.js
@@ -13,8 +11,8 @@ echo $QX_REQHEADER_ALL > /path/to/消防账号文本.txt
 [mitm] 
 hostname =  *119*
 
-*******************************/
 
+[script]
 // 请求头保存脚本
 var fm = $ios ? $fileManager : null;
 // 保存文件的路径
@@ -36,4 +34,3 @@ $task.fetch({}).then(response => {
 }, reason => {
     $done();
 });
-
