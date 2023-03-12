@@ -16,9 +16,9 @@ hostname =  *119*
 *******************************/
 
 // 请求头保存脚本
-var fs = $ios ? require('fs') : require('file');
-// 保存请求头的文件路径
-var filePath = '$HOME/Library/Mobile Documents/消防账号文本.txt';
+var fm = $ios ? $fileManager : null;
+// 保存文件的路径
+var filePath = 'headers.txt';
 
 $task.fetch({}).then(response => {
     // 获取完整请求头信息
@@ -26,15 +26,13 @@ $task.fetch({}).then(response => {
     // 将请求头转换为字符串
     var headersString = JSON.stringify(headers, null, '\t');
     // 将请求头写入文件
-    if ($ios) {
-        // 如果在 iOS 上运行，使用 fs 模块来写入文件
-        fs.writeString(filePath, headersString);
+    if (fm && fm.write) {
+        fm.writeString(fm.joinPath(fm.documentsDirectory(), filePath), headersString);
+        // 显示通知
+        $notify("请求头已保存", "", "请求头信息已成功保存到文件 " + filePath);
     } else {
-        // 如果在 macOS 或 Windows 上运行，使用 file 模块来写入文件
-        fs.write(filePath, headersString);
+        $notify("请求头保存失败", "", "无法访问文件系统");
     }
-    // 显示请求头
-    $notify("请求头信息", "", headersString);
 }, reason => {
     $done();
 });
