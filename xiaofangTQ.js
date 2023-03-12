@@ -41,7 +41,13 @@ $drive.writeFile({
     }
   }
 });
-}
+},
+
+"No": function() {
+    console.log("File not saved to iCloud Drive");
+    $notify("请求头未保存", "请求头未保存到iCloud网盘中");
+  }
+});
 
 }
 
