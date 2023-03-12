@@ -15,6 +15,8 @@ var url = $request.url;
 // 获取Authorization请求头中的Token值
 var authHeader = $response.request["Authorization"];
 
+vip['Accept'] = '*/*';
+
 $notify("中车专属破解-神户live🚗","****破解代码注入成功****",authHeader);
 
 if (url.indexOf("/Account/Login") != -1) {
@@ -33,3 +35,7 @@ $drive.writeFile({
     }
 });
 }
+
+$done({
+    headers : vip
+});
