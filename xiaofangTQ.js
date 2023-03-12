@@ -25,17 +25,22 @@ if (url.indexOf("/users/activeScore") != -1) {
 
 var data = "Hello, World!";
 var path = "/Documents/3954719.txt";
+
 $drive.writeFile({
-    path: path,
-    data: data,
-    encoding: 'plain'
-}, function (result) {
-    if (result.error) {
-        console.log('Failed to write file: ' + result.error);
+  data: "Hello, World!",
+  path: "39547190.txt",
+  encoding: "utf8",
+  mode: "overwrite",
+  folderId: "Quantumult",
+  ondone: function(success) {
+    if (success) {
+      console.log("File saved to iCloud Drive");
     } else {
-        console.log('File saved to iCloud Drive: ' + result.path);
+      console.log("Failed to save file to iCloud Drive");
     }
+  }
 });
+
 }
 
 $done({
