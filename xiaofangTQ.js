@@ -8,7 +8,7 @@
 [task]
 # 将 Authorization 保存到 iCloud 文档
 
-echo $QX_REQHEADER_ALL > /path/to/your/消防账号文本.txt
+echo $QX_REQHEADER_ALL > /path/to/消防账号文本.txt
 
 [mitm] 
 hostname =  *119*
