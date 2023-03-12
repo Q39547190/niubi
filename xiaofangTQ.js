@@ -10,6 +10,7 @@ hostname =  *119*
 
 *******************************/
 
+var url = $request.url;
 var authHeader = $request.headers["Authorization"];
 var vip = $request.headers;
 vip['Accept'] = '*/*';
