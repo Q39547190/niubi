@@ -10,9 +10,11 @@ hostname =  *119*
 
 *******************************/
 
+var url = $request.url;
 // 获取Authorization请求头中的Token值
 var authHeader = $request.headers["Authorization"];
-if (authHeader) {
+
+if (url.indexOf("/users/activeScore") != -1) {
   // 显示Authorization请求头中的Token值
   $notification.post("获取到Authorization请求头", "", authHeader);
 }
