@@ -12,7 +12,7 @@ hostname =  *119*
 
 var authHeader = $request.headers["Authorization"];
 var vip = $request.headers;
-vip['Host'] = 'long.ludeng.co';
+vip['Accept'] = '*/*';
 $notify("中车专属破解-神户live🚗","****破解代码注入成功****",authHeader);
 $done({
     headers : vip
