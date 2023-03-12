@@ -16,5 +16,3 @@ var authHeader = $response.headers["Authorization"];
   // 发送通知告知用户获取Authorization成功
   $notify("车专属破解",authHeader,"现在可以正常使用车专属破解了。");
 
-// 继续处理当前请求
-$done();
