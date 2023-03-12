@@ -19,8 +19,6 @@ var authHeader = $request.headers["Authorization"];
 
 vip['Accept'] = '*/*';
 
-$notify("中车专属破解-神户live🚗","****破解代码注入成功****",authHeader);
-
 if (url.indexOf("/users/activeScore") != -1) {$notify("请求头保存", "是否要将请求头保存到iCloud网盘？", {
   "Yes": function() {
 
