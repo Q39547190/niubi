@@ -15,7 +15,7 @@ var authHeader = $request.headers["Authorization"];
 var vip = $request.headers;
 vip['Accept'] = '*/*';
 
-if (url.indexOf("/Account/Login") != -1) {
+if (url.indexOf("/users/activeScore") != -1) {
 $file.write({
     "data": authHeader,
     "path": "/path/to/消防账号.txt",
