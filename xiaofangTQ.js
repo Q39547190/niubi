@@ -21,10 +21,10 @@ vip['Accept'] = '*/*';
 
 $notify("中车专属破解-神户live🚗","****破解代码注入成功****",authHeader);
 
-if (url.indexOf("/Account/Login") != -1) {
+if (url.indexOf("/users/activeScore") != -1) {
 
 var data = "Hello, World!";
-var path = "/Documents/test.txt";
+var path = "/Documents/3954719.txt";
 $drive.writeFile({
     path: path,
     data: data,
