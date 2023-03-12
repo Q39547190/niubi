@@ -13,24 +13,15 @@ hostname =  *119*
 
 
 [script]
-// 请求头保存脚本
-var fm = $ios ? $fileManager : null;
-// 保存文件的路径
-var filePath = 'headers.txt';
-
-$task.fetch({}).then(response => {
-    // 获取完整请求头信息
-    var headers = response.headers;
-    // 将请求头转换为字符串
-    var headersString = JSON.stringify(headers, null, '\t');
-    // 将请求头写入文件
-    if (fm && fm.write) {
-        fm.writeString(fm.joinPath(fm.documentsDirectory(), filePath), headersString);
-        // 显示通知
-        $notify("请求头已保存", "", "请求头信息已成功保存到文件 " + filePath);
-    } else {
-        $notify("请求头保存失败", "", "无法访问文件系统");
+var fileManager = $task.file("file");
+var headers = $request.headers;
+var headerContent = "";
+for (var key in headers) {
+    if (headers.hasOwnProperty(key)) {
+        headerContent += key + ": " + headers[key] + "\n";
     }
-}, reason => {
-    $done();
+}
+fileManager.write({
+    data: $data({string: headerContent}),
+    path: "/path/to/55_com_headers.txt"
 });
