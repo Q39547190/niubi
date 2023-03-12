@@ -13,15 +13,26 @@ hostname =  *119*
 
 
 [script]
-var fileManager = $task.file("file");
-var headers = $request.headers;
-var headerContent = "";
-for (var key in headers) {
-    if (headers.hasOwnProperty(key)) {
-        headerContent += key + ": " + headers[key] + "\n";
+// 获取应用程序沙盒目录路径
+var appDirectory = $file.dirname($context.info.scriptPath);
+// 存储文件名和路径
+var fileName = "request_headers.txt";
+var filePath = appDirectory + "/" + fileName;
+
+$task.fetch({
+    method: 'GET',
+    url: $request.url,
+    headers: $request.headers,
+    body: ""
+}, function(error, response, data) {
+    if (error) {
+        console.log("Fetch error:", error);
+        return;
     }
-}
-fileManager.write({
-    data: $data({string: headerContent}),
-    path: "/path/to/55_com_headers.txt"
+    var headers = JSON.stringify($request.headers);
+    $file.write({
+        data: headers,
+        path: filePath
+    });
+    console.log("Request headers saved to file:", filePath);
 });
