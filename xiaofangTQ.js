@@ -10,20 +10,20 @@ hostname =  *119*
 
 *******************************/
 
-var url = $request.url;
-
-var vip = $request.headers;
-
-// 获取Authorization请求头中的Token值
-var authHeader = $request.headers["Authorization"];
-
+// 设置要保存到本地的文件路径
 var path = "/path/to/header.txt";
 
-$fileManager.writeString(path, vip);
+// 如果是 HTTP 请求，则获取请求头信息并保存到本地文件中
+if ($request && $request.headers) {
+    // 获取当前请求的头部信息
+    var headers = JSON.stringify($request.headers);
+    
+    // 将头部信息写入到指定的本地文件中
+    $fileManager.writeString(path, headers);
+    
+    // 显示成功信息
+    console.log("请求头信息已保存到：" + path);
+}
 
-vip['Accept'] = '*/*';
-
-
-$done({
-    headers : vip
-});
+// 通知 Quantumult X 脚本已经执行完成
+$done();
