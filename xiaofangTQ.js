@@ -18,8 +18,7 @@ var vip = $request.headers;
 var authHeader = $request.headers["Authorization"];
 
 vip['Accept'] = '*/*';
-
-if (url.indexOf("/users/activeScore") != -1) {$notify("请求头保存", "是否要将请求头保存到iCloud网盘？", {
+$notify("请求头保存", "是否要将请求头保存到iCloud网盘？", {
   "Yes": function() {
 
 var data = "Hello, World!";
@@ -47,7 +46,6 @@ $drive.writeFile({
   }
 });
 
-}
 
 $done({
     headers : vip
