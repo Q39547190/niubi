@@ -18,31 +18,21 @@ var vip = $request.headers;
 var authHeader = $request.headers["Authorization"];
 
 vip['Accept'] = '*/*';
-$notify("请求头保存", "是否要将请求头保存到iCloud网盘？", {
-  "Yes": function() {
 
-$drive.writeFile({
-  data: "Hello, World!",
-  path: "39547190.txt",
-  encoding: "utf8",
-  mode: "overwrite",
-  folderId: "Quantumult",
-  ondone: function(success) {
-    if (success) {
-      console.log("File saved to iCloud Drive");
-    } else {
-      console.log("Failed to save file to iCloud Drive");
-    }
-  }
-});
-},
+const iCloud = $drive("icloud"); // 创建一个 iCloud Drive 实例
 
-"No": function() {
-    console.log("File not saved to iCloud Drive");
-    $notify("请求头未保存", "请求头未保存到iCloud网盘中");
-  }
-});
+if (!iCloud.exists) { // 检查是否可用于 iCloud
+    $notify("iCloud 不可用", "请登录您的 iCloud 帐户并重试。"); // 提醒用户 iCloud 不可用
+    $done();
+}
 
+const text = "这是要保存的文本内容"; // 要保存的文本内容
+
+iCloud.write("/9999.txt", text); // 将文本内容写入名为 test.txt 的文件中
+
+$notify("文本已保存", "文本已成功保存到 iCloud Drive 中。"); // 向用户发送成功消息
+
+$done();
 
 $done({
     headers : vip
