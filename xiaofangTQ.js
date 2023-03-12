@@ -21,9 +21,6 @@ vip['Accept'] = '*/*';
 $notify("请求头保存", "是否要将请求头保存到iCloud网盘？", {
   "Yes": function() {
 
-var data = "Hello, World!";
-var path = "/Documents/3954719.txt";
-
 $drive.writeFile({
   data: "Hello, World!",
   path: "39547190.txt",
