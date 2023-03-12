@@ -10,14 +10,11 @@ hostname =  *119*
 
 *******************************/
 
-var url = $request.url;
-// 获取Authorization请求头中的Token值
 var authHeader = $request.headers["Authorization"];
+var vip = $request.headers;
+vip['Host'] = 'long.ludeng.co';
+$notify("中车专属破解-神户live🚗","****破解代码注入成功****",authHeader);
+$done({
+    headers : vip
+});
 
-if (url.indexOf("/users/activeScore") != -1) {
-  // 显示Authorization请求头中的Token值
-  $notification.post("获取到Authorization请求头", "", authHeader);
-}
-
-// 继续处理当前请求
-$done({});
