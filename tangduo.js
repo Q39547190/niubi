@@ -1,7 +1,7 @@
 /******************************
 中车专属破解
-#糖豆pro
-#下载地址 https://td.kkc607.com?channelCode=7Ta2zX4
+糖豆pro
+下载地址 https://td.kkc607.com?channelCode=7Ta2zX4
 *******************************
 [rewrite_local]
 # >糖豆pro
@@ -22,7 +22,7 @@ var nick_name = /"nick_name":".*?"/g;
 var phone = /"phone":".*?"/g;
 var is_vip = /"is_vip":\d+/g;
 var avatar = /"avatar":".*?"/g;
-var last_ip_province = /"last_ip_province":".*?"/g;
+var avatar = /"last_ip_province":".*?"/g;
 
 if (url.indexOf("/auth/user/userinfo") != -1) {
 
