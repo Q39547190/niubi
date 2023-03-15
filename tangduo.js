@@ -6,7 +6,7 @@
 [rewrite_local]
 # >糖豆pro
 
-^ https:\/\/.+kk.+\/(v1|v2)\/(getAd|auth\/user\/userinfo|auth\/video\/check_play) url script-response-body https://raw.githubusercontent.com/Q39547190/niubi/main/tangdou.js
+^https:\/\/.+kk.+\/(v1|v2)\/(getAd|auth\/user\/userinfo|auth\/video\/check_play) url script-response-body https://raw.githubusercontent.com/Q39547190/niubi/main/tangdou.js
 
 [mitm] 
 hostname =*kkb108*
