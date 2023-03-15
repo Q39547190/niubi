@@ -26,10 +26,42 @@ var avatar = /"last_ip_province":".*?"/g;
 
 if (url.indexOf("/auth/user/userinfo") != -1) {
 
-body = body.replace(last_ip_province,'"last_ip_province":"中车专属破解"').replace(vip_expire_at,'"vip_expire_at":"2999-03-15T19:36:57+08:00"').replace(is_vip,'"is_vip":2').replace(phone,'"phone":"18888888888"').replace(avatar,'"avatar":"images/202303/1513/15116623613.png"').replace(nick_name,'"nick_name":"中车大神"');
-$done({
-    body
-});
+parse = {
+  "message" : "操作成功",
+  "data" : {
+    "last_ip_province" : "中车专属破解",
+    "vip_expire_at" : "2999-03-15T19:36:57+08:00",
+    "my_fun_count" : 999999,
+    "summary" : "永久会员",
+    "watch_coupon" : 3,
+    "base_down_coupon" : 0,
+    "base_watch_coupon" : 3,
+    "my_submit_count" : 0,
+    "sex" : 1,
+    "video_count" : 0,
+    "last_ip" : "2408:8456:f13f:c0a3:ed13:dd21:4265:3ff7",
+    "balance" : 99999999,
+    "my_collect" : 0,
+    "id" : "29f6dd64-fe12-4ebe-bf2d-cddcaf44fcae",
+    "invitecode" : "7Ta2zX4",
+    "is_vip" : 2,
+    "email" : "",
+    "phone" : "18888888888",
+    "my_attention_count" : 0,
+    "avatar" : "images/202303/1513/15116623613.png",
+    "nick_name" : "中车大神",
+    "created_at" : "2023-03-15T19:36:57+08:00",
+    "pid" : "",
+    "down_coupon" : 0,
+    "count_invite" : 0
+  },
+  "code" : 200
+};
+
+body = JSON.stringify(parse);
+
+$done({ "body": body });
+
 }
 
 if (url.indexOf("getAd") != -1) {
