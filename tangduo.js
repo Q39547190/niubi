@@ -22,7 +22,7 @@ var nick_name = /"nick_name":".*?"/g;
 var phone = /"phone":".*?"/g;
 var is_vip = /"is_vip":\d+/g;
 var avatar = /"avatar":".*?"/g;
-var avatar = /"last_ip_province":".*?"/g;
+var last_ip_province = /"last_ip_province":".*?"/g;
 
 if (url.indexOf("/auth/user/userinfo") != -1) {
 
