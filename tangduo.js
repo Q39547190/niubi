@@ -6,7 +6,7 @@
 [rewrite_local]
 # >糖豆pro
 
-^https:\/\/.+kk.+\/(v1|v2)\/(getAd|auth\/user\/userinfo|auth\/video\/check_play) url script-response-body https://raw.githubusercontent.com/Q39547190/niubi/main/tangduo.js
+^https:\/\/.+kk.+\/(v1|v2)\/(getAd|auth\/user\/userinfo|auth\/video\/check_play|auth\/bannerList) url script-response-body https://raw.githubusercontent.com/Q39547190/niubi/main/tangduo.js
 
 [mitm] 
 hostname =*kkb108*
@@ -43,7 +43,7 @@ $done({
 });
 }
 
-if (url.indexOf("getAd") != -1) {
+if (url.indexOf("/video/check_play") != -1) {
 
 parse = {"code":200,"data":{"is_watch":2,"type":"vip","is_vip":2},"message":"操作成功"};
 
@@ -51,4 +51,13 @@ body = JSON.stringify(parse);
 
 $done({ "body": body });
 
+}
+
+if (url.indexOf("/auth/bannerList") != -1) {
+
+body = body.replace(img,'"img":"images/202303/1513/15116623613.png"');
+
+$done({
+    body
+});
 }
