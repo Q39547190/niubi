@@ -10,14 +10,20 @@ hostname =  *119*
 
 *******************************/
 
-var fm = $fileManager;
-var icloud = fm.iCloudEnabled();
-if (!icloud) {
-    console.log("iCloud未启用或未登录");
-} else {
-    var container = fm.iCloudDocumentsPath();
-    var path = $text.base64Encode(container + "/Quantumult/data.txt");
-    fm.writeString(path, $response.body, true);
-}
 
-$done({});
+// 将请求和响应写入文件
+var req = $request;
+var res = $response;
+
+// 获取请求URL和响应体内容
+var url = req.url;
+var body = res.body;
+
+// 将请求URL和响应体内容写入文件
+$drive.write("Quantumult/" + new Date().getTime() + ".txt", url + "\n" + body, function(success) {
+   if (success) {
+      $notify("储存成功", "请求URL: " + url, "");
+   } else {
+      $notify("储存失败", "请求URL: " + url, "");
+   }
+});
