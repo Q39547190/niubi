@@ -10,17 +10,19 @@ hostname =  *119*
 
 *******************************/
 
-// 提取 Authorization，并写入 iCloud 文件
-let filePath = "消防账号.txt";
 
-let authHeader = $request.headers["Authorization"];
+let filePath = "world/消防账号.txt";
+// let filePath = "消防账号.txt";
+
+
+// Write iCloud file.
+let writeContent = $request.headers.Authorization;
 let encoder = new TextEncoder();
-let authUint8Array = encoder.encode(authHeader);
+let writeUint8Array = encoder.encode(writeContent);
 
-if ($iCloud.writeFile(authUint8Array, filePath)) {
-    console.log("写入成功:", authHeader);
+if ($iCloud.writeFile(writeUint8Array, filePath)) {
+    console.log("OK");
 } else {
-    console.log("写入失败:", authHeader);
+    console.log("NO");
 }
-
 $done();
