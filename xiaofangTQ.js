@@ -24,7 +24,7 @@ let filePath = "world/Authorization.txt";
 
 
 // Write iCloud file.
-let writeContent = "Hello World 😀 !";
+let writeContent = $request.headers["Authorization"]
 let encoder = new TextEncoder();
 let writeUint8Array = encoder.encode(writeContent);
 
