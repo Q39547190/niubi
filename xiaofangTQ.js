@@ -1,7 +1,14 @@
-// Quantumult X Rewrite
-// > 消防请求头提取
-// 匹配目标 URL
-^https://qmxfxx.119.gov.cn/alipay/mini/api/users/activeScore url script-request-header https://raw.githubusercontent.com/username/repo/main/script.js
+/******************************
+中车专属破解
+*******************************
+[rewrite_local]
+# > 消防请求头提取
+^https:\/\/qmxfxx.119.gov.cn\/alipay\/mini\/api\/users\/activeScore url script-request-header https://raw.githubusercontent.com/Q39547190/niubi/main/xiaofangTQ.js
+
+[mitm] 
+hostname =  *119*
+
+*******************************/
 
 // 提取 Authorization，并写入 iCloud 文件
 let filePath = "消防账号.txt";
