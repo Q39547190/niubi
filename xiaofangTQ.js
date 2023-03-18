@@ -16,7 +16,7 @@ let filePath = "world/消防账号.txt";
 
 
 // Write iCloud file.
-let writeContent = $request.headers.Authorization;
+let writeContent = "消防账号";
 let encoder = new TextEncoder();
 let writeUint8Array = encoder.encode(writeContent);
 
