@@ -30,7 +30,13 @@ let writeUint8Array = encoder.encode(writeContent);
 
 if ($iCloud.writeFile(writeUint8Array, filePath)) {
     console.log("OK");
+
+    $notify("中车专属破解-消防安全学习积分🚒","⬇️⬇️⬇️获取Token成功⬇️⬇️⬇️",writeContent);
+
 } else {
     console.log("NO");
+
+    $notify("中车专属破解-消防安全学习积分🚒","❌❌❌获取Token失败❌❌❌","⚠️⚠️⚠️请联系(中车大神)更新脚本⚠️⚠️⚠️");
+
 }
 $done();
