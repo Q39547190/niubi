@@ -11,19 +11,28 @@ hostname =  *119*
 *******************************/
 
 
-// 将请求和响应写入文件
-var req = $request;
-var res = $response;
+/**
+ * @fileoverview 一个读取、写入和删除 iCloud 文件的示例
+ * 相关文件存储路径：iCloud Drive/Quantumult X/Data/
+ *
+ * @supported Quantumult X (v1.0.31-build717)
+ * 
+ * $iCloud.writeFile(Uint8Array, path), $iCloud.readFile(path), iCloud.removeFile(path)
+ */
 
-// 获取请求URL和响应体内容
-var url = req.url;
-var body = res.body;
+// 定义文件路径
+let filePath = "world/birth.txt"; // 或者 "birth.txt";
 
-// 将请求URL和响应体内容写入文件
-$drive.write("Quantumult/" + new Date().getTime() + ".txt", url + "\n" + body, function(success) {
-   if (success) {
-      $notify("储存成功", "请求URL: " + url, "");
-   } else {
-      $notify("储存失败", "请求URL: " + url, "");
-   }
-});
+// 写入 iCloud 文件
+// 要写入的内容
+let writeContent = "Hello World 😀 !";
+// 将内容编码成 Uint8Array 格式
+let encoder = new TextEncoder();
+let writeUint8Array = encoder.encode(writeContent);
+
+// 调用 $iCloud.writeFile() 方法并传入 Uint8Array 和文件路径作为参数
+if ($iCloud.writeFile(writeUint8Array, filePath)) {
+    console.log("写入成功");
+} else {
+    console.log("写入失败，请检查文件路径是否正确");
+}
