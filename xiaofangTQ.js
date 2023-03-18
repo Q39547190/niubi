@@ -10,6 +10,14 @@ hostname =  *119*
 
 *******************************/
 
+/**
+ * @fileoverview 一个读取、写入和删除 iCloud 文件的示例
+ * 相关文件存储路径：iCloud Drive/Quantumult X/Data/
+ *
+ * @supported Quantumult X (v1.0.31-build717)
+ * 
+ * $iCloud.writeFile(Uint8Array, path), $iCloud.readFile(path), iCloud.removeFile(path)
+ */
 
 let filePath = "world/消防账号.txt";
 // let filePath = "消防账号.txt";
