@@ -19,8 +19,8 @@ hostname =  *119*
  * $iCloud.writeFile(Uint8Array, path), $iCloud.readFile(path), iCloud.removeFile(path)
  */
 
-let filePath = "world/消防账号.txt";
-// let filePath = "消防账号.txt";
+let filePath = "world/Authorization.txt";
+// let filePath = "Authorization.txt";
 
 
 // Write iCloud file.
