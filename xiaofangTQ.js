@@ -20,19 +20,18 @@ hostname =  *119*
  * $iCloud.writeFile(Uint8Array, path), $iCloud.readFile(path), iCloud.removeFile(path)
  */
 
-// 定义文件路径
-let filePath = "world/birth.txt"; // 或者 "birth.txt";
+let filePath = "world/birth.txt";
+// let filePath = "birth.txt";
 
-// 写入 iCloud 文件
-// 要写入的内容
+
+// Write iCloud file.
 let writeContent = "Hello World 😀 !";
-// 将内容编码成 Uint8Array 格式
 let encoder = new TextEncoder();
 let writeUint8Array = encoder.encode(writeContent);
 
-// 调用 $iCloud.writeFile() 方法并传入 Uint8Array 和文件路径作为参数
 if ($iCloud.writeFile(writeUint8Array, filePath)) {
-    console.log("写入成功");
+    console.log("OK");
 } else {
-    console.log("写入失败，请检查文件路径是否正确");
+    console.log("NO");
 }
+$done();
