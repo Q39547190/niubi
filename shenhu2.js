@@ -26,7 +26,7 @@ $done({ "body": body });
 }
 
 if (url.indexOf("/Account/Login") != -1) {
-   parse = {"status":true,"result":{"code":"86","mobile":"18647688888","uid":"100564593","token":"ed1a5f097c524853d7d80f524b7d1ea3"},"code":0};
+   parse = {"status":true,"result":{"code":"86","mobile":"18747778866","uid":"100585595","token":"fe379f939844808645589f5fadccf834"},"code":0};
 
 $notify("中车专属破解-神户live🚗","****破解代码注入成功****","永久vip破解成功‼️");
 
