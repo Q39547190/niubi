@@ -7,7 +7,7 @@ WorldTalk(国外版探探)全部破解
 [rewrite_local]
 # >WorldTalk(国外版探探)全部破解
 
-^https:\/\/www.zerophil.com\/(services|pay)\/(v1|v2)\/(query_user_detail|query_vip_by_talk_id|query_translation|get_wallet|send_gift_blue|trade_gateway) url script-response-body https://raw.githubusercontent.com/Q39547190/niubi/main/WorldTalkWT.js
+^https:\/\/www.zerophil.com\/(services|pay)\/(v1|v2)\/(query_user_detail|query_vip_by_talk_id|query_translation|get_wallet|send_gift_blue|trade_gateway|create_one_chat_order) url script-response-body https://raw.githubusercontent.com/Q39547190/niubi/main/WorldTalkWT.js
 
 [mitm] 
 hostname =*zerophil*
@@ -61,6 +61,16 @@ $done({
 });
 }
 
+if (url.indexOf("create_one_chat_order") != -1) {
+
+parse = {"code":0,"data":{"chatNum":9999999},"info":null,"reqCode":null};
+
+body = JSON.stringify(parse);
+
+$done({ "body": body });
+
+}
+
 if (url.indexOf("query_vip_by_talk_id") != -1) {
 
 parse = {"code":0,"data":{"vip":{"birthday":734848464000,"channel":"550330976882917376","country":"CN","createTime":1650948554147,"expirationTime":32494706931000,"month":12,"name":"鬼三","orderNo":"12022042612490724","sex":1,"systemType":1,"talkId":"25215819","version":"V5.8.2"}},"info":null,"reqCode":"save_friend"};
@@ -77,7 +87,7 @@ parse = {"code":0,"data":{"translation":{"birthday":734848464000,"channel":"5503
 
 body = JSON.stringify(parse);
 
-$notify("中车专属破解-WorldTalk 👾","****破解代码注入成功****","全部功能破解成功‼️");
+$notify("中车专属破解-WorldTalk 👩","****破解代码注入成功****","全部功能破解成功‼️");
 
 $done({ "body": body });
 
