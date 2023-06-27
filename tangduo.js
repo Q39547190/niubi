@@ -6,7 +6,7 @@
 [rewrite_local]
 # >糖豆pro
 
-^https:\/\/.+kk.+\/(v1|v2)\/(getAd|auth\/user\/userinfo|auth\/video\/check_play|auth\/bannerList) url script-response-body https://raw.githubusercontent.com/Q39547190/niubi/main/tangduo.js
+^https:\/\/.+kk.+\/(v1|v2)\/(getAd|auth\/user\/userinfo|auth\/video\/check_play|auth\/bannerList) url script-response-body https://ghproxy.com/https://raw.githubusercontent.com/Q39547190/niubi/main/tangduo.js
 
 [mitm] 
 hostname =*kkb108*,*28api*
