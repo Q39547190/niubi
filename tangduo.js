@@ -17,12 +17,7 @@ var body = $response.body;
 var url = $request.url;
 var parse = JSON.parse(body);
 var img = /"img":".*?"/g;
-var vip_expire_at = /"vip_expire_at":".*?"/g;
-var nick_name = /"nick_name":".*?"/g;
-var phone = /"phone":".*?"/g;
-var is_vip = /"is_vip":\d+/g;
-var avatar = /"avatar":".*?"/g;
-var avatar = /"last_ip_province":".*?"/g;
+var link = /"link":".*?"/g;
 
 if (url.indexOf("/auth/user/userinfo") != -1) {
 
@@ -30,7 +25,7 @@ parse = {
   "message" : "操作成功",
   "data" : {
     "last_ip_province" : "中车专属破解",
-    "vip_expire_at" : "2999-03-15T19:36:57+08:00",
+    "vip_expire_at" : "2999-09-09T19:36:57+08:00",
     "my_fun_count" : 999999,
     "summary" : "永久会员",
     "watch_coupon" : 3,
@@ -42,14 +37,14 @@ parse = {
     "last_ip" : "2408:8456:f13f:c0a3:ed13:dd21:4265:3ff7",
     "balance" : 99999999,
     "my_collect" : 0,
-    "id" : "29f6dd64-fe12-4ebe-bf2d-cddcaf44fcae",
+    "id" : "01551122-6c10-4578-8062-a65fa5db7cf5",
     "invitecode" : "7Ta2zX4",
     "is_vip" : 2,
     "email" : "",
     "phone" : "18888888888",
     "my_attention_count" : 0,
     "avatar" : "images/202303/1513/15116623613.png",
-    "nick_name" : "中车大神",
+    "nick_name" : "中车大神🚗",
     "created_at" : "2023-03-15T19:36:57+08:00",
     "pid" : "",
     "down_coupon" : 0,
@@ -66,7 +61,7 @@ $done({ "body": body });
 
 if (url.indexOf("getAd") != -1) {
 
-body = body.replace(img,'"img":"images/202303/1513/15116623613.png"');
+body = body.replace(img,'"img":"images/202303/1513/15116623613.png"').replace(link,'"link":"https://t.me/zczspjpd"');
 
 $notify("中车专属破解-糖豆pro🚗","****破解代码注入成功****","永久vip破解成功‼️");
 
@@ -87,9 +82,10 @@ $done({ "body": body });
 
 if (url.indexOf("/auth/bannerList") != -1) {
 
-body = body.replace(img,'"img":"images/202303/1513/15116623613.png"');
+body = body.replace(img,'"img":"images/202303/1513/15116623613.png"').replace(link,'"link":"https://t.me/zczspjpd"');
 
 $done({
     body
 });
 }
+
