@@ -91,7 +91,7 @@ PiliPili (动漫类)2022.12.7
 *******************************
 [rewrite_local]
 # > 通用破解全部视频
-^http[s]?:\/\/.+fuhuida.+watch.+m3u8.+ url script-request-header https://raw.githubusercontent.com/Q39547190/niubi/main/tongyongpojie.js
+^http[s]?:\/\/.+riyufanyi\.wang.+m3u8.+ url script-request-header https://raw.githubusercontent.com/Q39547190/niubi/main/tongyongpojie.js
 
 [mitm] 
 hostname = 120play*,h5play*,*ludeng*
@@ -99,7 +99,7 @@ hostname = 120play*,h5play*,*ludeng*
 *******************************/
 
 var vip = $request.headers;
-vip['Host'] = 'long.fuhuida.ltd';
+vip['Host'] = 'long.riyufanyi.wang';
 $done({
     headers : vip
 });
