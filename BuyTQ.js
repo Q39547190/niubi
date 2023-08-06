@@ -12,7 +12,7 @@ hostname = buy.itunes.apple.com
 
 *************************************/
 
-var data = JSON.parse($response.body);
+var data = $response.body;
 $notify("中车专属破解", "❌❌❌获取Token失败❌❌❌", data);
 console.log(data);
 $done();
