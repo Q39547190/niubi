@@ -95,7 +95,7 @@ var body2 = {
 $notify("中车专属破解", "❌❌❌获取Token失败❌❌❌", body);
 console.log(body);
 
-$done({ "body": body2 });
+$done({body : JSON.stringify(body2)});
 console.log(body);
 
 
