@@ -14,7 +14,7 @@ hostname = buy.itunes.apple.com
 
 var body = $response.body;
 
-var body2 = "{
+var body2 = {
   "status" : 0,
   "receipt" : {
     "receipt_type" : "Production",
@@ -90,7 +90,7 @@ var body2 = "{
   ],
   "warning" : "仅供学习，禁止转载或售卖",
   "Telegram" : "https://t.me/chxm1023"
-}";
+};
 
 $notify("中车专属破解", "❌❌❌获取Token失败❌❌❌", body);
 console.log(body);
