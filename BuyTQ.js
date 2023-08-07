@@ -12,9 +12,11 @@ hostname = buy.itunes.apple.com
 
 *************************************/
 
-var chxm1023 = JSON.parse($response.body);
+var body = $response.body;
 
-chxm1023 = {
+
+
+body = body.replace(/.+/g,'{
   "status" : 0,
   "receipt" : {
     "receipt_type" : "Production",
@@ -90,10 +92,14 @@ chxm1023 = {
   ],
   "warning" : "仅供学习，禁止转载或售卖",
   "Telegram" : "https://t.me/chxm1023"
-};
-$notify("中车专属破解", "❌❌❌获取Token失败❌❌❌", chxm1023);
-console.log(chxm1023);
+}');
+$notify("中车专属破解", "❌❌❌获取Token失败❌❌❌", body);
+console.log(body);
 $done({body : JSON.stringify(chxm1023)});
+
+$done({
+    body
+});
 
 
 
