@@ -95,7 +95,6 @@ body = body.replace(/.+/g,'{
 }');
 $notify("中车专属破解", "❌❌❌获取Token失败❌❌❌", body);
 console.log(body);
-$done({body : JSON.stringify(chxm1023)});
 
 $done({
     body
