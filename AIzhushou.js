@@ -4,7 +4,7 @@
 *******************************
 [rewrite_local]
 
-^https:\/\/mingnianbaofu\.top\/api\/app\/user\/getCurrentInfo url script-response-body https://ghproxy.com/https://raw.githubusercontent.com/Q39547190/niubi/main/AIzhushou.js
+^https:\/\/mingnianbaofu\.top\/api\/app\/user\/getCurrentInfo url script-response-body https://mirror.ghproxy.com/https://raw.githubusercontent.com/Q39547190/niubi/main/AIzhushou.js
 
 [mitm] 
 hostname =*mingnianbaofu.top*
